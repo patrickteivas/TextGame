@@ -15,7 +15,9 @@ namespace ConsoleApp1
             Artjom.Karma = 0;
             Artjom.Lucky = 0;
 
-            Console.WriteLine("Sinu tegelane on Artjom, üheksanda klassi Õpilane, kes hiljuti kolis Ida-Virumaale Kohtla-Järvesse. Linnas on tal raske tutvuda inimestega ning tal trenn, mis algas alles paari kuu eest, jäi katki, ning nüüd peab ta otsima uue treeninguala.");
+            Console.WriteLine("Edaspidised valikud sinu mängukäiku!\n");
+            Console.WriteLine("Sinu tegelaseks on üheksanda klassi õpilane Artjom, kes hiljuti kolis Ida-Virumaale, Kohtla-Järvele. \nSul oli eelmises linnas trenn, mis sulle väga meeldis, kuid uues linnas seda ei ole,\nning nüüd pead sa otsima uue treeninguala millega sa tegelema soovid hakata.");
+            
         }
     }
 }
