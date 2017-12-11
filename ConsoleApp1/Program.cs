@@ -15,8 +15,8 @@ namespace ConsoleApp1
             Artjom.Karma = 0;
             Artjom.Lucky = 0;
 
-            Console.WriteLine("Edaspidised valikud sinu mängukäiku!\n\nSinu tegelaseks on üheksanda klassi õpilane Artjom, kes hiljuti kolis Ida-Virumaale, Kohtla-Järvele. \nSul oli eelmises linnas trenn, mis sulle väga meeldis, kuid uues linnas seda ei ole,\nning nüüd pead sa otsima uue treeninguala millega sa tegelema soovid hakata.");
-        Valik:
+            Console.WriteLine("Edaspidised valikud muudavad sinu mängukäiku!\n\nSinu tegelaseks on üheksanda klassi õpilane Artjom, kes hiljuti kolis Ida-Virumaale, Kohtla-Järvele. \nSul oli eelmises linnas trenn, mis sulle väga meeldis, kuid uues linnas seda ei ole,\nning nüüd pead sa otsima uue treeninguala millega sa tegelema soovid hakata.");
+            Valik:
             Console.WriteLine("\nPeate valima oma uue treeninguala (Sisestage järjekorranumber):\n(1) Poks\n(2) Jalgpall\n(3) Iluuisutamine");
             int trgAla = int.Parse(Console.ReadLine());
             Console.Write("Teie valik: ");
@@ -47,8 +47,7 @@ namespace ConsoleApp1
                 goto Valik;
             }
 
-            Console.WriteLine("\n\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei olnud ta sõbrunenud väga oma uue klassis, ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha.");
-            Console.WriteLine("\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate toa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda, Marek ja Siim.\nNad märkavad Artjomi ning suunduvad kiiresti tema poole:");
+            Console.WriteLine("\n\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei olnud ta sõbrunenud väga oma uue klassis, ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate toa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda, Marek ja Siim.\nNad märkavad Artjomi ning suunduvad kiiresti tema poole:");
         }
     }
 }
