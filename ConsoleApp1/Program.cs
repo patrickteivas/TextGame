@@ -17,7 +17,33 @@ namespace ConsoleApp1
 
             Console.WriteLine("Edaspidised valikud sinu mängukäiku!\n");
             Console.WriteLine("Sinu tegelaseks on üheksanda klassi õpilane Artjom, kes hiljuti kolis Ida-Virumaale, Kohtla-Järvele. \nSul oli eelmises linnas trenn, mis sulle väga meeldis, kuid uues linnas seda ei ole,\nning nüüd pead sa otsima uue treeninguala millega sa tegelema soovid hakata.");
-            
+            Valik:
+            Console.WriteLine("\nPeate valima oma uue treeninguala (Sisestage järjekorranumber):\n(1) Poks\n(2) Jalgpall\n(3) Iluuisutamine");
+            int trgAla = int.Parse(Console.ReadLine());
+            if (trgAla == 1)
+            {
+                Artjom.Agility = 75;
+                Artjom.Stamina = 80;
+                Artjom.Respect = 80;
+            }
+            else if (trgAla == 2)
+            {
+                Artjom.Agility = 50;
+                Artjom.Stamina = 80;
+                Artjom.Respect = 60;
+            }
+            else if (trgAla == 3)
+            {
+                Artjom.Agility = 60;
+                Artjom.Stamina = 30;
+                Artjom.Respect = -40;
+            }
+            else
+            {
+                Console.WriteLine("Sellist valikut pole.");
+                goto Valik;
+            }
+
         }
     }
 }
