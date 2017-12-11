@@ -50,7 +50,7 @@ namespace ConsoleApp1
                 goto Valik;
             }
 
-            Console.WriteLine("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei olnud ta sõbrunenud väga oma uue klassiga, ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate toa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda, Marek ja Siim.\nNad märkavad Artjomi ning suunduvad kiiresti tema poole:");
+            Console.WriteLine("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei olnud ta sõbrunenud väga oma uue klassiga, ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda, Marek ja Siimu.\nNad märkavad Artjomi ning suunduvad kiiresti tema poole:");
         }
     }
 }
