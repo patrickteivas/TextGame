@@ -1,0 +1,77 @@
+Tekstipõhine RPG konsoolirakendus 
+
+Näide: http://textadventures.co.uk/games/tag/rpg 
+
+* Otsused muudavad mängu käiku 
+
+* Võitlussüsteem 
+
+* Energia, mana, stamina 
+
+* Graafilist disaini pole (Konsooli võib tekstiga joonistada) 
+
+  
+
+---Script--- 
+
+Story - ida-virumaa elu. 
+
+Peategelane - Artjom 
+
+Story põhimõte - kutt satub halba seltskonda surutakse viin näppu, elu muutub aina aina aina ja aina sitemaks (no ikka aina) tulevad tema sitad eluvalikud  
+
+(narko tarbimine, müük,alakale suitsu/kangema ost, Peksmine, kaklema, röövid, koduvägivald, vanematega sitt lugu ja lugu lõppeb sellega, et kutt läheb narkojoobes röövile ning saab kuuli väga lihtne või mis.  
+
+  
+
+Süsteemid: 
+
+*Stamina //Tegevusala määrab 
+
+*Agility //Tegevusala määrab 
+
+*Luck  
+
+*Respect //Tegevusala määrab 
+
+*Money //Alguses 100 eurot 
+
+*Karma //Alguses 0 (-100 kuni 100) 
+
+  
+
+### 1. Valik: Vabal ajal tegeleb ### 
+
+    Poksiga: EASY 
+
+            AGI: +50/100 
+
+            STA: +60/100 
+
+            REP: +80/100 
+
+    Jalgpalliga: MEDIUM 
+
+            AGI: +75/100 
+
+            STA: +80/100 
+
+            REP: +70/100 
+
+    Iluusutamisega: HARD 
+
+            AGI: +60/100 
+
+            STA: +30/100 
+
+            REP: -40/100 
+
+Lugu:   
+
+Artjom on 9nda klassi õpilane, kes hiljuti kolis Ida-Virumaalne ilusasse linna nimega Kohtla-Järve. Artjom on viieline õpilane, kes vabal ajal tegeleb [Ise valib: Poksiga, jalgpalliga, iluuisutamisega]. Artjom ärkab hommikul kell 7 ning valmistub kooliminekuks. *Teil on x palju raha* "Kuidas te kooli lähete?" [Bussiga (5 Eurot), autoga(Jääd hiljaks / Karma kukub), jalgrattaga *röövitakse rahakott*].  
+
+Jõuab kooli 10 minutit enne tundi, tema poole tulevad kaks austatud noormeest, kes kutsuvad teda laupäeval peole. Artjom pole kunagi varem pidudel käinud, rääkimata keelatud ainete tarbimisest.  
+
+Aeg tiksub laupäeva õhtuni, kus piim saab otsa ning ema saadab Artjomi poodi piima järgi. Poodi minnes teed takistab must BMW E39, uks avaneb, astuvad välja need 2 sama noormeest ning küsivad uuesti "Kas sa tuled ikka täna peole?" [Jah *Noormehed suruvad Artjomiga kätt ning kutsuvad teda autosse, kuhu Artjom ettevaatlikult istub*/Ei *Suruvad vägisi autosse*]. 
+
+jom sõidab peole koos kahe noormehe ja juhiga. Sõidu ajal on Artjom vait ning ainult noormehed omavahel räägivad. Peole jõudes märkab Artjom, et kohal on väga palju inimesi ning üritab massisulanduda. Artjom kohtub peol ilusa tüdrukuga, kes on juba veidi joogine ning ulatab ka talle õllepudeli näppu. Artjom proovib veel üht ja proovib teist ning on lõpuks veidi joogine.  
