@@ -19,35 +19,38 @@ namespace ConsoleApp1
             Valik:
             Console.WriteLine("\nPeate valima oma uue treeninguala (Sisestage järjekorranumber):\n(1) Poks\n(2) Jalgpall\n(3) Iluuisutamine");
             int trgAla = int.Parse(Console.ReadLine());
-            Console.Write("Teie valik: ");
             if (trgAla == 1)
             {
                 Artjom.Agility = 75;
                 Artjom.Stamina = 80;
                 Artjom.Respect = 80;
-                Console.Write("poks");
+                Console.Clear();
+                Console.WriteLine("Te valisite: Poksi");
             }
             else if (trgAla == 2)
             {
                 Artjom.Agility = 50;
                 Artjom.Stamina = 80;
                 Artjom.Respect = 60;
-                Console.Write("jalgpall");
+                Console.Clear();
+                Console.WriteLine("Teie valisite: Jalgpalli");
             }
             else if (trgAla == 3)
             {
                 Artjom.Agility = 60;
                 Artjom.Stamina = 30;
                 Artjom.Respect = -40;
-                Console.Write("iluuisutaja");
+                Console.Clear();
+                Console.WriteLine("Te valisite: Iluuisutamise");
             }
             else
             {
+                Console.Clear();
                 Console.WriteLine("Sellist valikut pole.");
                 goto Valik;
             }
 
-            Console.WriteLine("\n\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei olnud ta sõbrunenud väga oma uue klassis, ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate toa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda, Marek ja Siim.\nNad märkavad Artjomi ning suunduvad kiiresti tema poole:");
+            Console.WriteLine("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei olnud ta sõbrunenud väga oma uue klassiga, ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate toa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda, Marek ja Siim.\nNad märkavad Artjomi ning suunduvad kiiresti tema poole:");
         }
     }
 }
