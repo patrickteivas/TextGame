@@ -56,9 +56,9 @@ namespace ConsoleApp1
             Console.Clear();
 
             Console.WriteLine("Käes on 31.detsember.\n\nArtjom on õhtupoolikul poe ees, sest tema ema palus et ta ostaks koju süüa ja juua. \nTeed takistab must BMW E39, autost astuvad välja Marek ja Siim ning küsivad Artjomilt:");
+            Valik2:
             Console.WriteLine("\nMarek ja Siim: No mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah, ei]");
             String Vastus420 = Console.ReadLine();
-            Valik2:
             Console.Clear();
             if (Vastus420 == "jah" | Vastus420 == "Jah" | Vastus420 == "Tulen" | Vastus420 == "tulen") {
                 Console.WriteLine("Marek kutsub Artjomi autosse, Artjom istub ning nad sõidavad peo poole, jutustades elust enesest"); }
