@@ -57,7 +57,7 @@ namespace ConsoleApp1
 
             //Tra patrick mul poh, eelmine tekst läks liiga pikaks, cancer editida juba nagu tra #ei kannata - nii on palju lihtsam ja loogilisem ülesehitus .
             Console.WriteLine("Käes on 31.detsember.\n\nArtjom on õhtupoolikul poe ees, sest tema ema palus et ta ostaks koju süüa ja juua. \nTeed takistab must BMW E39, autost astuvad välja Marek ja Siim ning küsivad Artjomilt:");
-            Console.WriteLine("\nMarek ja Siim: No mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah, ei]");
+            Console.WriteLine("\nMarek ja Siim: No mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah, ei]"); // [Jah, ei] kast tuleb viisakamaks muuta.
             String Vastus420 = Console.ReadLine();
             Valik2: // Siin on mingi bug, spammib.
             if (Vastus420 == "jah" | Vastus420 == "Jah" | Vastus420 == "Tulen" | Vastus420 == "tulen") {
@@ -69,7 +69,8 @@ namespace ConsoleApp1
                 Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
                 goto Valik2;
             }
-           
+            Console.Clear();
+            Console.WriteLine("\nPeol märkab Artjom, et seal on palju tundmatuid nägusid, kuid suuremad grupid ikkagi suhtlevad pigem üksteise vahel,\nkui kellegi teisega. Artjom läheb elutuppa otsima endale juua, teel sinna märkab ta pikka, blondi noormeest,\nkes märkab ka Artjomi ning suundub tema poole.");
 
         }
     }
