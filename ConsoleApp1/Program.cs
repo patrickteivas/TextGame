@@ -14,10 +14,6 @@ namespace ConsoleApp1
             int ValikMenu = int.Parse(Console.ReadLine());
             if (ValikMenu == 1)
             {
-                bool state = true;
-                while (state == true)
-                {
-
                     var Artjom = new BattleSystem();
                     Artjom.Money = 100;
                     Artjom.Karma = 0;
@@ -100,9 +96,6 @@ namespace ConsoleApp1
                         Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
                         goto Valik2;
                     }
-
-
-                }
             }
             else if (ValikMenu == 2)
             {
