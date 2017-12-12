@@ -10,6 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Start:
             Console.WriteLine("---Menu---\n(1) Play\n(2) About\n(3) Credits\n(4) Exit");
             int ValikMenu = int.Parse(Console.ReadLine());
             if (ValikMenu == 1)
@@ -105,6 +106,10 @@ namespace ConsoleApp1
             else if (ValikMenu == 2)
             {
                 Console.Clear();
+                Typewrite("Meie mäng räägib ühest 9nda klassi poisist, kes kolib Kohtla-Järvele ning satub selletõttu halba seltskonda.\nMängu käigus käsitleme Artjomi elukäiku, mis muutub iga päevaga aina halvemaks.");
+                Console.ReadLine();
+                Console.Clear();
+                goto Start;
                 //About
             }
             else if (ValikMenu == 3)
@@ -114,8 +119,14 @@ namespace ConsoleApp1
             }
             else if (ValikMenu == 4)
             {
-                //Exit
             }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
+                goto Start;
+            }
+            Console.WriteLine("Programm lõpetas töö.");
         }
 
         static void Typewrite(string message)
