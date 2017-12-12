@@ -46,18 +46,31 @@ namespace ConsoleApp1
             else
             {
                 Console.Clear();
-                Console.WriteLine("Sellist valikut pole.");
+                Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
                 goto Valik;
             }
-            Console.WriteLine("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei olnud ta sõbrunenud väga oma uue klassiga, ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda, Marekut ja Siimu.\nMarek ja Siim märkavad Artjomi ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid Siimu poole peole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu\nMarek ja Siim: Vahet pole mees, tuled või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole");
+            Console.WriteLine("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei olnud ta sõbrunenud väga oma uue klassiga, ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid Siimu poole peole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu\nMarek ja Siim: Vahet pole mees, tuled või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole");
 
             Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
             Console.ReadKey();
             Console.Clear();
 
-            Console.WriteLine("Test");
-            
+            //Tra patrick mul poh, eelmine tekst läks liiga pikaks, cancer editida juba nagu tra #ei kannata - nii on palju lihtsam ja loogilisem ülesehitus .
+            Console.WriteLine("Käes on 31.detsember.\n\nArtjom on õhtupoolikul poe ees, sest tema ema palus et ta ostaks koju süüa ja juua. \nTeed takistab must BMW E39, autost astuvad välja Marek ja Siim ning küsivad Artjomilt:");
+            Console.WriteLine("\nMarek ja Siim: No mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah, ei]");
+            String Vastus420 = Console.ReadLine();
+            Valik2: // Siin on mingi bug, spammib.
+            if (Vastus420 == "jah" | Vastus420 == "Jah" | Vastus420 == "Tulen" | Vastus420 == "tulen") {
+                Console.WriteLine("Marek kutsub Artjomi autosse, Artjom istub ning nad sõidavad peo poole, jutustades elust enesest"); }
+            else if (Vastus420 == "Ei" | Vastus420 == "ei" | Vastus420 == "ei tule" | Vastus420 == "Ei tule") {
+                Console.WriteLine("Siim läheb närvi mille peale Artjom siiski istub autosse"); }
+            else
+            {
+                Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
+                goto Valik2;
+            }
            
+
         }
     }
 }
