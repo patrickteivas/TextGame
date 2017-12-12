@@ -120,10 +120,12 @@ namespace ConsoleApp1
 
         static void Typewrite(string message)
         {
+            int a = 50;
             for (int i = 0; i < message.Length; i++)
             {
+                if (Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Enter) a = 00;
                 Console.Write(message[i]);
-                System.Threading.Thread.Sleep(00);
+                System.Threading.Thread.Sleep(a);
             }
         }
 
