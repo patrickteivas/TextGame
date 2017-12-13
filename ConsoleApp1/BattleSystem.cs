@@ -45,14 +45,20 @@ namespace ConsoleApp1
                     Console.ReadLine();
                     Console.Clear();
 
-                    if (Stamina < 100)
+                    if (Agility < 100)
                     {
-                        Stamina += 10;
+                        Agility += 10;
+                        if (Agility > 100) Agility = 100;
                     }
                 }
                 else if (otsus == 2)
                 {
                     Console.Clear();
+                    if (Respect < 100)
+                    {
+                        Respect += 10;
+                        if (Respect > 100) Respect = 100;
+                    }
                     Typewrite("Artjom otsustas, et ei lähe kooli ning nüüd on tal võimalus tegeleda millegi muuga.\n");
                     valik2:
                     Console.WriteLine("\nMillega ta võiks tegeleda?\n(1) Otsib varustaja ja müüb narkotsi.\n(2) Teeb peale.\n(3) Magab päeva maha.");
@@ -60,14 +66,31 @@ namespace ConsoleApp1
                     if (otsus2 == 1)
                     {
                         Console.Clear();
+                        if (Respect < 100)
+                        {
+                            Respect += 15;
+                            if (Respect > 100) Stamina = 100;
+                        }
+                        Money += 35;
                     }
                     else if (otsus2 == 2)
                     {
                         Console.Clear();
+                        if (Respect < 100)
+                        {
+                            Respect += 5;
+                            if (Respect > 100) Respect = 100;
+                        }
                     }
                     else if (otsus2 == 3)
                     {
                         Console.Clear();
+                        Typewrite("Artjom oli liiga väsinud, et midagi teha, ning magas päeva maha.");
+                        if (Stamina < 100)
+                        {
+                            Stamina += 10;
+                            if (Stamina > 100) Stamina = 100;
+                        }
                     }
                     else
                     {
