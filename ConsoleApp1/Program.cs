@@ -144,6 +144,8 @@ namespace ConsoleApp1
                     Console.WriteLine("\nSellist valikut ei ole, proovi uuesti.");
                     goto Valik4;
                 }
+                Typewrite("\nArtjom: Nahui sa mulle sisse lendad?\nVitja: Türa sa seleted?\nVitja: Vaatan, et oled suht äratõusnud juba, sulle tuleks küll viisakalt molli kütta.\nArtjom: Aga äkki tegutsed ka siis või oled niisama jutumees?\nVitja: Aga näita parem ise? Põrkad pidevalt aga võiksid ka ise tegudeni jõuda.");
+                Typewrite("\n\n[Löön/Ei löö]");
 
             }
             else if (ValikMenu == 2)
