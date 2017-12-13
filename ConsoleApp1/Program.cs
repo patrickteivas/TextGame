@@ -68,7 +68,7 @@ namespace ConsoleApp1
 
                 Typewrite("Käes on 31.detsember.\n\nArtjom on õhtupoolikul poe ees, sest tema ema palus, et ta ostaks koju süüa ja juua. \nTeed takistab must BMW E39, autost astuvad välja Marek ja Siim ning küsivad: ");
                 Valik2:
-                Console.WriteLine("\nMarek ja Siim: No Artjom, mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah, ei]");
+                Console.WriteLine("\nMarek ja Siim: No Artjom, mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah/Ei]");
                 String Vastus420 = Console.ReadLine();
                 Console.Clear();
                 if (Vastus420 == "jah" | Vastus420 == "Jah" | Vastus420 == "Tulen" | Vastus420 == "tulen")
@@ -86,6 +86,7 @@ namespace ConsoleApp1
                 }
 
                 Typewrite("\nPeol märkab Artjom, et seal on palju tundmatuid nägusid, kuid suuremad grupid ikkagi suhtlevad pigem üksteise vahel \nkui kellegi teisega. Artjom läheb elutuppa otsima endale juua, teel sinna märkab ta pikka, blondi noormeest,\nkes märkab ka Artjomi ning suundub tema poole ning ütleb:\n\nDimitri: Tervist, tundud uus olevat. Olen Dimitri.\nArtjom: Kolisin hiljuti alles Kohtla-Järvele seega olen üsna uus, olen Artjom muidu.\nDimitri: Aa, sina oledki see Artjom keda Marek mulle mõned päevad tagasi mainis?\nArtjom: Vist jah, ega sa muidu ei tea juhuslikult, kes seda pidu korraldab?\nDimitri: See ongi minu pidu, tahad midagi juua või oled kainekas?\nArtjom: Ma ei tea.. ma pole varem joonud.\nDimitri: Tohoh, seda annab küll muuta. Tule minu järgi kööki, tutvustan sulle paari inimest.\n\nArtjom ja Dimitri seavad sammud köögi suunas, köögis märkavad nad, et õllekasti kõrval seisavad kaks noormeest ja üks tüdruk.\nArtjom ja Dimitri lähevad nende juurde ning hakkavad vestlema:\nDimitri: Vaadake kutid kelle ma leidsin, see on Artjom. Kutt kolis alles hiljuti Kohtla-Järvele seega võtke rahulikult.\nDimitri: Aga sellepeale me ju võtame?\nPeeter: Muidugi võtame.\nTanja: Kutid võtke nüüd rahulikult\nKutid: võtame võtame..");
+                Valik3:
                 Console.WriteLine("\nTanja: Artjom kas sa tobi tahad?\n[Tahan/Ei taha]");
                 String Vastus1337 = Console.ReadLine();
 
@@ -103,11 +104,43 @@ namespace ConsoleApp1
                 }
                 else
                 {
+                    Console.Clear();
                     Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
-                    goto Valik2;
+                    goto Valik3;
                 }
 
                 //2 VABA PÄEVA
+
+                //Day4
+
+                Typewrite("\nArtjom ja Dimitri jalutavad peo poole, mis juba teist nädalat järjest toimub Dimitri pool.\nNad saavad oma pundiga kokku, teretavad üksteist ja on jällegi teel peo poole.\nKohale jõudes teeb Artjom ühe tobi.\nTanja: Sa viimasel ajal suht palju kimund, veits paljuks ei lähe?\nTanja: Sa viimasel ajal suht palju kimund, veits paljuks ei lähe?\nArtjom: Vaevalt.\nDimitri: Õige mees.\nPeeter: Ega las ta teeb kui soovib. Mees teeb mis tahab.\nTanja: Selge, eks ma ise peaks vähem peale tegema ja enda alkohooliga tagasi hoidma.\nVladimir: Sa peaks juba võõrutusravi saama.\nTanja: Jää vait…\n ");
+                Typewrite("\nVajutage enterit, et looga edasi minna.");
+                Console.ReadKey();
+                Console.Clear();
+                Valik4:
+                Typewrite("Tanja ja Vladimir jäävad kaklema üksteise vahel, neid lahutab Vitja,\nTanja poisssõber samal ajal Peeter läheb toob joogid, Dimitri ja Artjom lähevad tuppa.\nDimitri võtab taskust tableti ja küsib:\nDimitri: Tahad? Teeb su tuju paremaks.\nArtjom: Ei soovi väga, mul praegugi hea olla.\nDimitri: Aga mis siis kui joogiga pakun?\n[Tahan/Ei taha]\n");
+                String Vastus69 = Console.ReadLine();
+                
+                if (Vastus69 == "tahan" | Vastus69 == "Tahan")
+                {
+                    Console.Clear();
+                    Typewrite("\nTeie valik: Jah");
+                    Typewrite("\nDimitri: Vot seda ma arvasingi, sa oled ikka normaalne kutt.");
+                    Typewrite("\nPeale tableti võtmist langeb Artjom põlvili ning hakkab tundma end imelikult,\nsilme eest läheb korraks mustaks ning tagasi tulles näeb Artjom rusikat enda poole lendamas.\nLäheb kakluseks.");
+                }
+                else if (Vastus69 == "ei taha" | Vastus69 == "Ei taha")
+                {
+                    Console.Clear();
+                    Typewrite("\nTeie valik: Ei");
+                    Typewrite("Einoh, vähemalt võta siis juua.");
+                    Typewrite("\nPeale joogi joomist võtmist langeb Artjom põlvili ning hakkab tundma end imelikult,\nsilme eest läheb korraks mustaks ning tagasi tulles näeb Artjom rusikat enda poole lendamas.\nLäheb kakluseks.");
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("\nSellist valikut ei ole, proovi uuesti.");
+                    goto Valik4;
+                }
 
             }
             else if (ValikMenu == 2)
