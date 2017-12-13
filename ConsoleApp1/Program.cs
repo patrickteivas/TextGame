@@ -114,19 +114,18 @@ namespace ConsoleApp1
                 Console.ReadLine();
                 Console.Clear();
                 goto Start;
-                //About
             }
             else if (ValikMenu == 3)
             {
                 Console.Clear();
-                Typewrite("Selle mängu tegemisse panustasid:\nKenno Pajunurm\nPatrick Teivas\nKen Liivrand\nMait Rappu\n\n(Vajutage Enterit Main Menule naasemiseks)");
+                Typewrite("Selle mängu tegemisse panustasid:\nKenno Pajunurm\nPatrick Teivas\nKen Liit\nMait Rappu\n\n(Vajutage Enterit Main Menule naasemiseks)");
                 Console.ReadLine();
                 Console.Clear();
                 goto Start;
-                //Credits
             }
             else if (ValikMenu == 4)
             {
+                Console.Clear();
             }
             else
             {
@@ -134,7 +133,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
                 goto Start;
             }
-            Console.WriteLine("\n\nProgramm lõpetas töö."); 
+            Console.WriteLine("\nProgramm lõpetas töö."); 
         }
 
         static void Typewrite(string message)
