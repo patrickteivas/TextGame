@@ -17,46 +17,77 @@ namespace ConsoleApp1
 
         public void FreeDay()
         {
-            int päevad = 0;
+            int päevad = 1;
             bool state = true;
             while (state == true)
             {
                 Typewrite("Artjom ärkab, kell on 7:45. Peate otsustama, mida Artjom edasi teeb.");
+                valik:
                 Console.WriteLine("\n(1) Läheb kooli\n(2) Ei lähe kooli");
                 int otsus = int.Parse(Console.ReadLine());
+
                 if (otsus == 1)
                 {
                     Console.Clear();
-                    Typewrite("Artjom tõusis voodist üles, pesi hambaid ja läks kooli.\nArtjom õppis hoolsalt koolis ning kell sai 17:00. Artjom läks koju.\nKodus Artjom sõi ");
+                    Typewrite("Artjom tõusis voodist üles, pesi hambaid ja läks kooli.\nArtjom õppis hoolsalt koolis ning kell sai 17:00. Artjom läks koju.\nKodus Artjom sõi ning ");
+                    if (päevad == 1)
+                    {
+                        Typewrite("läks magama.");
+                        päevad++;
+                    }
+                    else if (päevad == 2)
+                    {
+                        Typewrite("ning talle helistas ootamatult Dimitri.\n\nDimitri: Jou mees sa pead kohe minu juurde peole tulema.\nArtjom: Ma ei tea kas viitsin.\nDimitri: Cmon mees, poh tule.\nArtjom: No davai ma tulen.\n\nNing nüüd liigub Artjom Dimitri maja poole.");
+                        state = false;
+                    }
+
+                    Console.WriteLine("\n\nVajutage enterit, et looga edasi minna.");
+                    Console.ReadLine();
+                    Console.Clear();
+
                     if (Stamina < 100)
                     {
                         Stamina += 10;
                     }
-
                 }
                 else if (otsus == 2)
                 {
-                    Typewrite("");
-                }
-                else
-                {
-
-                }
-                päevad++;
-
-                if (päevad == 2)
-                {
-                    Typewrite("ning talle helistas ootamatult Dimitri.\n\nDimitri: Jou mees sa pead kohe minu juurde peole tulema.\nArtjom: Ma ei tea kas viitsin.\nDimitri: Cmon mees, poh tule.\nArtjom: No davai ma tulen.\nNing nüüd liigub Artjom Dimitri maja poole.");
-                    state = false;
-                }
-                else
-                {
-                    Typewrite("ning läks magama.");
-                    Console.WriteLine("\n\nVajutage enterit, et looga edasi minna.");
-                    Console.ReadLine();
                     Console.Clear();
+                    Typewrite("Artjom otsustas, et ei lähe kooli ning nüüd on tal võimalus tegeleda millegi muuga.\n");
+                    valik2:
+                    Console.WriteLine("\nMillega ta võiks tegeleda?\n(1) Otsib varustaja ja müüb narkotsi.\n(2) Teeb peale.\n(3) Magab päeva maha.");
+                    int otsus2 = int.Parse(Console.ReadLine());
+                    if (otsus2 != 1 | otsus2 != 2 | otsus2 != 3)
+                    {
+                        Console.Clear();
+                        Console.Write("Niisugust valikut pole, proovige uuesti\n");
+                        goto valik2;
+                    }
+                    else if (otsus2 == 1)
+                    {
+
+                    }
+                    else if (otsus2 == 2)
+                    {
+
+                    }
+                    else if (otsus2 == 3)
+                    {
+
+                    }
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.Write("Niisugust valikut pole, proovige uuesti");
+                    goto valik;
                 }
             }
+        }
+
+        public void DimitriBattle()
+        {
+
         }
 
         static void Typewrite(string message)
