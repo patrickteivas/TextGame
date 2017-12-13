@@ -91,11 +91,15 @@ namespace ConsoleApp1
 
                 if (Vastus1337 == "Tahan" | Vastus1337 == "tahan")
                 {
-                    Typewrite("Artjom paneb suitsu põlema ning hakkab seda rahulikult tõmbama.");
+                    Console.Clear();
+                    Console.WriteLine("Te valiste: Tahan");
+                    Typewrite("\nArtjom paneb suitsu põlema ning hakkab seda rahulikult tõmbama.");
                 }
                 else if (Vastus1337 == "ei taha" | Vastus1337 == "Ei taha")
                 {
-                    Typewrite("Vaatamata Artjomi soovidest, surutakse talle ikka tobi ette ning ta hakkab seda kimudes köhima.");
+                    Console.Clear();
+                    Console.WriteLine("Te valisite: Ei taha");
+                    Typewrite("\nVaatamata Artjomi soovidest, surutakse talle ikka tobi ette ning ta hakkab seda kimudes köhima.");
                 }
                 else
                 {
@@ -126,7 +130,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
                 goto Start;
             }
-            Console.WriteLine("Programm lõpetas töö.");
+            Console.WriteLine("\n\nProgramm lõpetas töö."); 
         }
 
         static void Typewrite(string message)
