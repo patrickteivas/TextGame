@@ -109,11 +109,14 @@ namespace ConsoleApp1
                     goto Valik3;
                 }
 
-                //2 VABA PÄEVA
+                Typewrite("\nKui Artjom suitsu ära tegi, siis otsustas ta koju magama minna. Soovis sõpradele head aega ja hakkas minema. \nKodus jäi ta koheselt magama.");
 
-                //Day4
+                Console.WriteLine("\n\nVajutage enterit, et looga edasi minna.");
+                Console.ReadLine();
+                Console.Clear();
+                Artjom.FreeDay();
 
-                Typewrite("\nArtjom ja Dimitri jalutavad peo poole, mis juba teist nädalat järjest toimub Dimitri pool.\nNad saavad oma pundiga kokku, teretavad üksteist ja on jällegi teel peo poole.\nKohale jõudes teeb Artjom ühe tobi.\nTanja: Sa viimasel ajal suht palju kimund, veits paljuks ei lähe?\nTanja: Sa viimasel ajal suht palju kimund, veits paljuks ei lähe?\nArtjom: Vaevalt.\nDimitri: Õige mees.\nPeeter: Ega las ta teeb kui soovib. Mees teeb mis tahab.\nTanja: Selge, eks ma ise peaks vähem peale tegema ja enda alkohooliga tagasi hoidma.\nVladimir: Sa peaks juba võõrutusravi saama.\nTanja: Jää vait…\n ");
+                Typewrite("\nArtjom ja Dimitri jalutavad peo poole, mis juba teist nädalat järjest toimub Dimitri pool.\nNad saavad oma pundiga kokku, teretavad üksteist ja on jällegi teel peo poole.\nKohale jõudes teeb Artjom ühe tobi.\nTanja: Sa viimasel ajal suht palju kimund, veits paljuks ei lähe?\nArtjom: Vaevalt.\nDimitri: Õige mees.\nPeeter: Ega las ta teeb kui soovib. Mees teeb mis tahab.\nTanja: Selge, eks ma ise peaks vähem peale tegema ja enda alkohooliga tagasi hoidma.\nVladimir: Sa peaks juba võõrutusravi saama.\nTanja: Jää vait...\n ");
                 Typewrite("\nVajutage enterit, et looga edasi minna.");
                 Console.ReadKey();
                 Console.Clear();
@@ -124,7 +127,7 @@ namespace ConsoleApp1
                 if (Vastus69 == "tahan" | Vastus69 == "Tahan")
                 {
                     Console.Clear();
-                    Typewrite("\nTeie valik: Jah");
+                    Typewrite("Teie valik: Jah\n");
                     Typewrite("\nDimitri: Vot seda ma arvasingi, sa oled ikka normaalne kutt.");
                     Typewrite("\nPeale tableti võtmist langeb Artjom põlvili ning hakkab tundma end imelikult,\nsilme eest läheb korraks mustaks ning tagasi tulles näeb Artjom rusikat enda poole lendamas.\nLäheb kakluseks.");
                 }

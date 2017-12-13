@@ -46,12 +46,14 @@ namespace ConsoleApp1
 
                 if (päevad == 2)
                 {
-                    Typewrite("\nning talle helistas ootamatult Dimitri.\nDimitri: Jou mees sa pead kohe minu juurde peole tulema.\nArtjom: Ma ei tea kas viitsin.\nDimitri: Cmon mees, poh tule.\nArtjom: No davai ma tulen.\nNing nüüd liigub Artjom Dimitri maja poole.");
+                    Typewrite("ning talle helistas ootamatult Dimitri.\n\nDimitri: Jou mees sa pead kohe minu juurde peole tulema.\nArtjom: Ma ei tea kas viitsin.\nDimitri: Cmon mees, poh tule.\nArtjom: No davai ma tulen.\nNing nüüd liigub Artjom Dimitri maja poole.");
                     state = false;
                 }
                 else
                 {
                     Typewrite("ning läks magama.");
+                    Console.WriteLine("\n\nVajutage enterit, et looga edasi minna.");
+                    Console.ReadLine();
                     Console.Clear();
                 }
             }
