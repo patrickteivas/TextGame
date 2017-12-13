@@ -57,23 +57,23 @@ namespace ConsoleApp1
                     valik2:
                     Console.WriteLine("\nMillega ta võiks tegeleda?\n(1) Otsib varustaja ja müüb narkotsi.\n(2) Teeb peale.\n(3) Magab päeva maha.");
                     int otsus2 = int.Parse(Console.ReadLine());
-                    if (otsus2 != 1 | otsus2 != 2 | otsus2 != 3)
+                    if (otsus2 == 1)
+                    {
+                        Console.Clear();
+                    }
+                    else if (otsus2 == 2)
+                    {
+                        Console.Clear();
+                    }
+                    else if (otsus2 == 3)
+                    {
+                        Console.Clear();
+                    }
+                    else
                     {
                         Console.Clear();
                         Console.Write("Niisugust valikut pole, proovige uuesti\n");
                         goto valik2;
-                    }
-                    else if (otsus2 == 1)
-                    {
-
-                    }
-                    else if (otsus2 == 2)
-                    {
-
-                    }
-                    else if (otsus2 == 3)
-                    {
-
                     }
                 }
                 else
