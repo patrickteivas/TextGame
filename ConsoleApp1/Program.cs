@@ -110,7 +110,7 @@ namespace ConsoleApp1
             else if (ValikMenu == 2)
             {
                 Console.Clear();
-                Typewrite("Meie mäng räägib ühest 9nda klassi poisist, kes kolib Kohtla-Järvele ning satub selletõttu halba seltskonda.\nMängu käigus käsitleme Artjomi elukäiku, mis muutub iga päevaga aina halvemaks.");
+                Typewrite("Meie mäng räägib ühest 9nda klassi poisist, kes kolib Kohtla-Järvele ning satub selletõttu halba seltskonda.\nMängu käigus käsitleme Artjomi elukäiku, mis muutub iga päevaga aina halvemaks.\n\n(Vajutage Enterit Main Menule naasemiseks)");
                 Console.ReadLine();
                 Console.Clear();
                 goto Start;
@@ -119,6 +119,10 @@ namespace ConsoleApp1
             else if (ValikMenu == 3)
             {
                 Console.Clear();
+                Typewrite("Selle mängu tegemisse panustasid:\nKenno Pajunurm\nPatrick Teivas\nKen Liivrand\nMait Rappu\n\n(Vajutage Enterit Main Menule naasemiseks)");
+                Console.ReadLine();
+                Console.Clear();
+                goto Start;
                 //Credits
             }
             else if (ValikMenu == 4)
