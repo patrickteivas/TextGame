@@ -14,5 +14,7 @@ namespace ConsoleApp1
         public int Respect { get; set; }
         public int Money { get; set; }
         public int Karma { get; set; }
+
+
     }
 }

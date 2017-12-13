@@ -106,6 +106,9 @@ namespace ConsoleApp1
                     Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
                     goto Valik2;
                 }
+
+                //2 VABA PÄEVA
+
             }
             else if (ValikMenu == 2)
             {
