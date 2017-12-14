@@ -247,15 +247,15 @@ namespace ConsoleApp1
 
                 if (valik == 1)     
                 {
-
+                    Typewrite("\nArtjom ning Vladimir tapavad tulevahetuses kaks inimest kolmest, kolmas mees põgenes. \nDimitrist saab kriminaalse grupeeringu juht ning Artjom hakkab tema jaoks töötama. \nGame Over.");
                 }
                 else if (valik == 2)
                 {
-
+                    Typewrite("\nArtjom ning Vladimir üritavad põgeneda, kuid mõlemad hukkuvad tugeva verejooksu tagajärjel. \nGame Over.");
                 }
                 else if (valik == 3)
                 {
-
+                    Typewrite("\nArtjom saab Dimitri poole joostes tugevalt vigastada, talle järgnes Vladimir kes hukkus jooksmise käigus.\nGame Over. ");
                 }
                 else
                 {
