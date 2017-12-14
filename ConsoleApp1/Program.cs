@@ -11,9 +11,10 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Start:
+            //Menu
             Console.WriteLine("---Menu---\n(1) Play\n(2) About\n(3) Credits\n(4) Exit");
             int ValikMenu = int.Parse(Console.ReadLine());
-            if (ValikMenu == 1)
+            if (ValikMenu == 1) //Sissejuhatus
             {
                 var Artjom = new BattleSystem();
                 Artjom.Money = 100;
@@ -25,7 +26,7 @@ namespace ConsoleApp1
                 Valik:
                 Console.WriteLine("\n\nPeate valima oma uue treeninguala:\n(1) Poks (Easy)\n(2) Jalgpall (Medium)\n(3) Iluuisutamine (Hard)");
                 int trgAla = int.Parse(Console.ReadLine());
-                if (trgAla == 1)
+                if (trgAla == 1) //Poks
                 {
                     Artjom.Agility = 75;
                     Artjom.Stamina = 80;
@@ -35,7 +36,7 @@ namespace ConsoleApp1
 
                     Typewrite("\nArtjom on sõbrunenud oma uue klassiga väga hästi, kuid tal ei olnud tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid klassipeole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu\nMarek ja Siim: Vahet pole mees, tuled või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole.\n");
                 }
-                else if (trgAla == 2)
+                else if (trgAla == 2) //Jalgpall
                 {
                     Artjom.Agility = 50;
                     Artjom.Stamina = 80;
@@ -45,7 +46,7 @@ namespace ConsoleApp1
 
                     Typewrite("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei ole ta sõbrunenud uue klassiga terviklikult ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi plaanis. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid Siimu poole peole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu\nMarek ja Siim: Vahet pole mees, tuled või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole.\n");
                 }
-                else if (trgAla == 3)
+                else if (trgAla == 3) //Iluuisutamine
                 {
                     Artjom.Agility = 60;
                     Artjom.Stamina = 30;
@@ -66,6 +67,7 @@ namespace ConsoleApp1
                 Console.ReadKey();
                 Console.Clear();
 
+                //1 päev
                 Typewrite("Käes on 31.detsember.\n\nArtjom on õhtupoolikul poe ees, sest tema ema palus, et ta ostaks koju süüa ja juua. \nTeed takistab must BMW E39, autost astuvad välja Marek ja Siim ning küsivad: ");
                 Valik2:
                 Console.WriteLine("\nMarek ja Siim: No Artjom, mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah/Ei]");
@@ -197,7 +199,7 @@ namespace ConsoleApp1
                         Console.ReadLine();
                         }
 
-                    //Day6
+                    //6 päev
                     Console.Clear();
                     Valik6:
                     Typewrite("Kell on 5.42 ning Dimitri helistab\n\nDimitri: Artjom sa pead mind aitama, ma olen suures pasas!\nArtjom: Kuidas? Millega?\nDimitri: Pole tähtis aga, kas sa saad mind aidata?\n[Aitan/Ei aita]\n");
@@ -214,7 +216,7 @@ namespace ConsoleApp1
                         Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellegile? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad vana tehase poole");
 
                     }
-                    else if(action == "Ei aita" | action4 == "ei aita")
+                    else if(action4 == "Ei aita" | action4 == "ei aita")
                     {
                         // Tekst/Tegevus puudu. 
                     }
