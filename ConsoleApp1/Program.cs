@@ -12,7 +12,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Start:
+        Start:
             //Music
             SoundPlayer player = new SoundPlayer();
             player.SoundLocation = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Music.wav");
@@ -157,8 +157,9 @@ namespace ConsoleApp1
                     Console.WriteLine("\nSellist valikut ei ole, proovi uuesti.");
                     goto Valik4;
                 }
-            
+
                 Typewrite("\nArtjom: Nahui sa mulle sisse lendad?\nVitja: Türa sa seleted?\nVitja: Vaatan, et oled suht äratõusnud juba, sulle tuleks küll viisakalt molli kütta.\nArtjom: Aga äkki tegutsed ka siis või oled niisama jutumees?\nVitja: Aga näita parem ise? Põrkad pidevalt aga võiksid ise ka tegudeni jõuda.");
+            Valik5:
                 Typewrite("\n\n[Löön/Ei löö]\n");
                 string action = Console.ReadLine();
 
@@ -197,7 +198,7 @@ namespace ConsoleApp1
                 {
                     Console.Clear();
                     Console.WriteLine("Te valisite: Ei löö");
-                    Valik5:
+                Valik6:
                     Typewrite("\nPeeter tuleb karjumise peale tuppa ning hakkab Artjomi ning Vitjat lepitama.\n\n[Õnnestub/Ei õnnestu]");
                     string action3 = Console.ReadLine();
 
@@ -209,6 +210,12 @@ namespace ConsoleApp1
                     {
                         Typewrite("\nPeeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb\n\nVajutage enterit, et looga edasi minna.");
                         Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
+                        goto Valik6;
                     }
 
                 }
@@ -232,6 +239,8 @@ namespace ConsoleApp1
                 Typewrite("\nArtjom: Laseb uske kella\nArtjom: Mina Artjom, Dimitril on meie abi vaja.\nVladimir avab ukse ning kutsub teda sisse.\nArtjom: Ta jättis mulje, et ta on suures pasas!\nVladimir: Tule kaasa.\n");
                 Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellelegi? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad vana tehase poole");
                 //7 päev
+
+                
             }
             else if (ValikMenu == 2)
             {
@@ -272,6 +281,5 @@ namespace ConsoleApp1
                 System.Threading.Thread.Sleep(a);
             }
         }
-
     }
 }
