@@ -169,7 +169,7 @@ namespace ConsoleApp1
                     Console.WriteLine("Te valisite: Löön");
                     Typewrite("\nArtjom lööb Vitjat korduvalt näkku ning Vitja kukub põrandale pikali.");
                 Valik6:
-                    Typewrite("\nTuppa tuleb peeter, kes korraks jälgib toimunut ja siis sähvatab:\nPeeter: Mida vittu sa korraldad Artjom? Putsi pean sind samamoodi kasti taguma?\nArtjom: Mille pärast?\nPeeter: Tra vaata mida sa Vitjaga tegid, ta on mu parim sõber.\n[Jooksen/löön]\n");
+                    Typewrite("\nTuppa tuleb peeter, kes korraks jälgib toimunut ja siis sähvatab:\nPeeter: Mida vittu sa korraldad Artjom? Putsi pean sind samamoodi kasti taguma?\nArtjom: Mille pärast?\nPeeter: Tra vaata mida sa Vitjaga tegid, ta on mu parim sõber.\n[Jooksen/Löön]\n");
                     string action2 = Console.ReadLine();
 
                     if (action2 == "Jooksen" | action2 == "jooksen")
@@ -199,14 +199,14 @@ namespace ConsoleApp1
                     Console.Clear();
                     Console.WriteLine("Te valisite: Ei löö");
                 Valik6:
-                    Typewrite("\nPeeter tuleb karjumise peale tuppa ning hakkab Artjomi ning Vitjat lepitama.\n\n[Õnnestub/Ei õnnestu]\n"); // Ei tööta millegipärast allolevad võimalused
+                    Typewrite("\nPeeter tuleb karjumise peale tuppa ning hakkab Artjomi ning Vitjat lepitama.\n\n[Õnnestub/Ei õnnestu]\n");
                     string action3 = Console.ReadLine();
 
-                    if (action3 == "Õnnestub" | action3 == "õnnestub")
+                    if (action3 == "Onnestub" | action3 == "onnestub")
                     {
                       Typewrite("\nArtjom ning Vitja suruvad kätt ja Artjom seab sammud kodupoole");
                     }
-                    else if (action3 == "Ei õnnestu" | action3 == "ei õnnestu")
+                    else if (action3 == "Ei onnestu" | action3 == "ei onnestu")
                     {
                         Typewrite("\nPeeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb\n\nVajutage enterit, et looga edasi minna.");
                         Console.ReadLine();
@@ -214,7 +214,7 @@ namespace ConsoleApp1
                     else
                     {
                         Console.Clear();
-                        Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
+                        Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
                         goto Valik6;
                     }
 
