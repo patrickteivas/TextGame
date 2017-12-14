@@ -209,21 +209,32 @@ namespace ConsoleApp1
                         Typewrite("\nPeeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb\n\nVajutage enterit, et looga edasi minna.");
                         Console.ReadLine();
                     }
+
+                    //5 päev (Freeday)
+                    Artjom.Freeday1();
+
+                    //6 päev
+                    Console.Clear();
+                Valik6:
+                    Typewrite("Kell on 5.42 ning Dimitri helistab\n\nDimitri: Artjom sa pead mind aitama, ma olen suures pasas!\nArtjom: Kuidas? Millega?\nDimitri: Pole tähtis aga, kas sa saad mind aidata?\nArtjom: Jah muidugi ma aitan!\n");
+                    Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Console.WriteLine("Te valisite: Aitan");
+                    Typewrite("\nArtjom: Kus sa oled?!\nDimitri: Vanas tehases ja kutsu Vladimir ka.\nArtjom: Okei, ma kohe tulen.\n Vajutage enterit, et looga edasi minna.");
+                    Console.ReadLine();
+                    Console.WriteLine("-15 min hiljem jõuab Artjom Vladimiri ukse ette-");
+                    Typewrite("\nArtjom: Laseb uske kella\nArtjom: Mina Artjom, Dimitril on meie abi vaja.\nVladimir avab ukse ning kutsub teda sisse.\nArtjom: Ta jättis mulje, et ta on suures pasas!\nVladimir: Tule kaasa.\n");
+                    Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellelegi? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad vana tehase poole");
+                    //7 päev
+
                 }
-
-                //5 päev (Freeday)
-                Artjom.Freeday1();
-
-                //6 päev
-                Console.Clear();
-
-                Typewrite("Kell on 5.42 ning Dimitri helistab\n\nDimitri: Artjom sa pead mind aitama, ma olen suures pasas!\nArtjom: Kuidas? Millega?\nDimitri: Pole tähtis aga, kas sa saad mind aidata?\nArtjom: Jah muidugi ma aitan!\n");
-                Typewrite("\nArtjom: Kus sa oled?!\nDimitri: Vanas tehases ja kutsu Vladimir ka.\nArtjom: Okei, ma kohe tulen.");
-                Console.WriteLine("-15 min hiljem jõuab Artjom Vladimiri ukse ette-");
-                Typewrite("\nArtjom: Laseb uske kella\nArtjom: Mina Artjom, Dimitril on meie abi vaja.\nVladimir avab ukse ning kutsub teda sisse.\nArtjom: Ta jättis mulje, et ta on suures pasas!\nVladimir: Tule kaasa.\n");
-                Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellelegi? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad vana tehase poole");
-                //7 päev
-
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
+                    goto Valik5;
+                }
             }
             else if (ValikMenu == 2)
             {
