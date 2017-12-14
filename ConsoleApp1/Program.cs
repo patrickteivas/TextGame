@@ -121,7 +121,7 @@ namespace ConsoleApp1
                 Console.ReadKey();
                 Console.Clear();
                 Valik4:
-                Typewrite("Tanja ja Vladimir jäävad kaklema üksteise vahel, neid lahutab Vitja,\nTanja poisssõber samal ajal Peeter läheb toob joogid, Dimitri ja Artjom lähevad tuppa.\nDimitri võtab taskust tableti ja küsib:\nDimitri: Tahad? Teeb su tuju paremaks.\nArtjom: Ei soovi väga, mul praegugi hea olla.\nDimitri: Aga mis siis kui joogiga pakun?\n[Tahan/Ei taha]\n");
+                Typewrite("Tanja ja Vladimir jäävad kaklema üksteise vahel, neid lahutab Vitja,Tanja poisssõber.\nSamal ajal Peeter läheb toob joogid, Dimitri ja Artjom lähevad tuppa.\nDimitri võtab taskust tableti ja küsib:\nDimitri: Tahad? Teeb su tuju paremaks.\nArtjom: Ei soovi väga, mul praegugi hea olla.\nDimitri: Aga mis siis kui joogiga pakun?\n[Tahan/Ei taha]\n");
                 String Vastus69 = Console.ReadLine();
                 
                 if (Vastus69 == "tahan" | Vastus69 == "Tahan")
@@ -144,9 +144,66 @@ namespace ConsoleApp1
                     Console.WriteLine("\nSellist valikut ei ole, proovi uuesti.");
                     goto Valik4;
                 }
-                Typewrite("\nArtjom: Nahui sa mulle sisse lendad?\nVitja: Türa sa seleted?\nVitja: Vaatan, et oled suht äratõusnud juba, sulle tuleks küll viisakalt molli kütta.\nArtjom: Aga äkki tegutsed ka siis või oled niisama jutumees?\nVitja: Aga näita parem ise? Põrkad pidevalt aga võiksid ka ise tegudeni jõuda.");
-                Typewrite("\n\n[Löön/Ei löö]");
+                Valik5:
+                Typewrite("\nArtjom: Nahui sa mulle sisse lendad?\nVitja: Türa sa seleted?\nVitja: Vaatan, et oled suht äratõusnud juba, sulle tuleks küll viisakalt molli kütta.\nArtjom: Aga äkki tegutsed ka siis või oled niisama jutumees?\nVitja: Aga näita parem ise? Põrkad pidevalt aga võiksid ise ka tegudeni jõuda.");
+                Typewrite("\n\n[Löön/Ei löö]\n");
+                string action = Console.ReadLine();
 
+                if (action == "Löön"|action == "löön")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Te valisite: Löön");
+                    Typewrite("\nArtjom lööb Vitjat korduvalt näkku ning Vitja kukub põrandale pikali.");
+                    Valik6:
+                    Typewrite("\nTuppa tuleb peeter, kes korraks jälgib toimunut ja siis sähvatab:\nPeeter: Mida vittu sa korraldad Artjom? Putsi pean sind samamoodi kasti taguma?\nArtjom: Mille pärast?\nPeeter: Tra vaata mida sa Vitjaga tegid, ta on mu parim sõber.\n[Jooksen/löön]\n");
+                    string action2 = Console.ReadLine();
+
+                    if (action2 == "Jooksen" | action2 == "jooksen")
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Te valisite: Jooksen");
+                        Typewrite("\nArtjom jookseb ära, vältides Peetriga kaklust.");
+                        Typewrite("\nArtjom leidis, et ta on väsinud ning seadis sammud kodu poole.");
+                    }
+                    else if (action2 == "Löön" | action2 == "löön")
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Te valisite: Löön");
+                        Typewrite("\nArtjom võtab lauapealt veinipudeli ning lööb selle kõvasti vastu Peetri pead.");
+                        Typewrite("\nPeeter kukub põrandale pikali.\nArtjom satub paanikasse ning otsustab, et mõistlik oleks kiiremas korras jalga lasta.\nArtjom seadis sammud kodupoole.");
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
+                        goto Valik6;
+                    }
+                
+                }
+                else if (action == "Ei löö"| action == "ei löö")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Te valisite: Ei löö");
+                    Typewrite("\nPeeter tuleb karjumise peale tuppa ning hakkab Artjomi ning Vitjat lepitama.\n\n[Õnnestub/Ei õnnestu]");
+                    string action3 = Console.ReadLine();
+
+                        if (action3 == "Õnnestub" |action3 == "õnnestub")
+                        {
+                        Typewrite("\nArtjom ning Vitja suruvad kätt ja Artjom seab sammud kodupoole");
+                        }
+                        else if (action3 == "Ei õnnestu" | action3 == "ei õnnestu")
+                        {
+                        Typewrite("\nPeeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb");
+                        }
+
+
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
+                    goto Valik5;
+                }
             }
             else if (ValikMenu == 2)
             {
