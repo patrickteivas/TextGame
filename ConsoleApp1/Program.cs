@@ -231,6 +231,7 @@ namespace ConsoleApp1
                         Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
                         goto Valik6;
                     }
+                    //7 päev
 
                 }
                 else
