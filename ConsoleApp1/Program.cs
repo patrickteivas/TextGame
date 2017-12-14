@@ -17,7 +17,7 @@ namespace ConsoleApp1
             SoundPlayer player = new SoundPlayer();
             player.SoundLocation = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Music.wav");
             Console.WriteLine(player.SoundLocation);
-            player.Play();
+            player.PlayLooping();
             Console.Clear();
 
             //Menu
