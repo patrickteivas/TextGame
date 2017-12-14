@@ -130,7 +130,7 @@ namespace ConsoleApp1
 
                 //4 päev
                 Typewrite("Artjom ja Dimitri jalutavad peo poole, mis juba teist nädalat järjest toimub Dimitri pool.\nNad saavad oma pundiga kokku, teretavad üksteist ja on jällegi teel peo poole.\nKohale jõudes teeb Artjom ühe tobi.\n\nTanja: Sa viimasel ajal suht palju kimunud, veits paljuks ei lähe?\nArtjom: Vaevalt.\nDimitri: Õige, las mees teeb mida mees tahab.\nPeeter: Ega las ta teeb kui soovib. Suur mees ikkagi.\nTanja: Selge, eks ma ise peaks kah rohkem ennast vaatama.\nVladimir: Sa peaks juba võõrutusravi saama.\nTanja: Jää vait...\n ");
-                Typewrite("\nVajutage enterit, et looga edasi minna.");
+                Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
                 Console.ReadKey();
                 Console.Clear();
             Valik4:
@@ -140,14 +140,14 @@ namespace ConsoleApp1
                 if (Vastus69 == "tahan" | Vastus69 == "Tahan")
                 {
                     Console.Clear();
-                    Typewrite("Teie valik: Tahan\n");
+                    Console.WriteLine("Teie valik: Tahan\n");
                     Typewrite("\nDimitri: Vot seda ma arvasingi, sa oled ikka normaalne kutt.");
                     Typewrite("\nPeale tableti võtmist langeb Artjom põlvili ning hakkab tundma end imelikult,\nsilme eest läheb hetkeks mustaks ning tagasi tulles tunneb Artjom tugevat valu arvates, et Vitja lõi tal pildi tasku.\nLäheb kakluseks.");
                 }
                 else if (Vastus69 == "ei taha" | Vastus69 == "Ei taha")
                 {
                     Console.Clear();
-                    Typewrite("\nTeie valik: Ei taha");
+                    Console.WriteLine("\nTeie valik: Ei taha");
                     Typewrite(" \nDimitri: Einoh, vähemalt võta siis juua.");
                     Typewrite("\nPeale joogi joomist võtmist langeb Artjom põlvili ning hakkab tundma end imelikult,\nsilme eest läheb hetkeks mustaks ning tagasi tulles tunneb Artjom tugevat valu arvates, et Vitja lõi tal pildi tasku.\nLäheb kakluseks.");
                 }
@@ -204,11 +204,11 @@ namespace ConsoleApp1
 
                     if (action3 == "Onnestub" | action3 == "onnestub")
                     {
-                      Typewrite("\nArtjom ning Vitja suruvad kätt ja Artjom seab sammud kodupoole");
+                      Typewrite("Artjom ning Vitja suruvad kätt ja Artjom seab sammud kodupoole");
                     }
                     else if (action3 == "Ei onnestu" | action3 == "ei onnestu")
                     {
-                        Typewrite("\nPeeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb\n\nVajutage enterit, et looga edasi minna.");
+                        Typewrite("Peeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb\n\nVajutage enterit, et looga edasi minna.");
                         Console.ReadLine();
                     }
                     else
@@ -290,7 +290,8 @@ namespace ConsoleApp1
                 Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
                 goto Start;
             }
-            Console.WriteLine("\nProgramm lõpetas töö.");
+            Console.Clear();
+            Console.WriteLine("Programm lõpetas töö.\n");
         }
 
         static void Typewrite(string message)
