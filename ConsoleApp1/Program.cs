@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -237,12 +237,32 @@ namespace ConsoleApp1
                 Typewrite("\nArtjom: Kus sa oled?!\nDimitri: Vanas tehases ja kutsu Vladimir ka.\nArtjom: Okei, ma kohe tulen.");
                 Console.WriteLine("\n\n-15 min hiljem jõuab Artjom Vladimiri ukse ette-");
                 Typewrite("\nArtjom: Laseb uske kella\nArtjom: Mina Artjom, Dimitril on meie abi vaja.\nVladimir avab ukse ning kutsub teda sisse.\nArtjom: Ta jättis mulje, et ta on suures pasas!\nVladimir: Tule kaasa.\n");
-                Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellelegi? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad vana tehase poole");
+                Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellelegi? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad Vladimiri autoga vana tehase poole");
                 Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
                 Console.ReadKey();
                 Console.Clear();
-                Typewrite("Tehase ees nad näevad...");
+                valik6:
+                Typewrite("Tehase ees näevad nad Dimitrit kahtlaste kuttidega.\nDimitri märkab Artjomi ning Vladimirit, ning hakkab hüsteeriliselt nende poole jooksma.\nVladimir märkab Dimitri žeste vihjates, et ta vajab relva ning ta vajab seda kiiresti.\nArtjom ning Vladimir katavad ennast auto taha, et tulevaste kuulide eest ennast kaitsta sama teeb ka Dimitri, kes peidab ennast seina taha.\n(1) Tulista auto tagant/n(2) Põgene/n(3) Ürita Dimitri poole joosta");
+                int valik = int.Parse(Console.ReadLine());
 
+                if (valik == 1)     
+                {
+
+                }
+                else if (valik == 2)
+                {
+
+                }
+                else if (valik == 3)
+                {
+
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Sellist valikut ei ole");
+                    goto valik6;
+                }
             }
             else if (ValikMenu == 2)
             {
