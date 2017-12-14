@@ -34,15 +34,15 @@ namespace ConsoleApp1
                         Agility += 10;
                         if (Agility > 100) Agility = 100;
                     }
-                    Typewrite("Artjom tõusis voodist üles, pesi hambaid ja läks kooli.\nArtjom õppis hoolsalt koolis ning kell sai 17:00. Artjom läks koju.\nKodus Artjom sõi ning ");
+                    Typewrite("Artjom tõusis voodist üles, pesi hambad ära ja läks kooli.\nArtjom õppis hoolsalt koolis ning kell sai 17:00. Artjom läks koju.\nKodus Artjom sõi");
                     if (päevad == 1)
                     {
-                        Typewrite("läks magama.");
+                        Typewrite(" ning jäi väsimusest magama, jättes kodutööd tegemata.");
                         päevad++;
                     }
                     else if (päevad == 2)
                     {
-                        Typewrite("ning talle helistas ootamatult Dimitri.\n\nDimitri: Jou mees sa pead kohe minu juurde peole tulema.\nArtjom: Ma ei tea kas viitsin.\nDimitri: Cmon mees, poh tule.\nArtjom: No davai ma tulen.\n\nNing nüüd liigub Artjom Dimitri maja poole.");
+                        Typewrite(" ning hetk hiljem helistas talle ootamatult Dimitri.\n\nDimitri: Jou mees, sa pead kohe minu juurde peole tulema.\nArtjom: Ma ei tea kas viitsin.\nDimitri: Cmon mees, poh tule.\nArtjom: No davai ma tulen.\n\nArtjom hakkas liikuma Dimitri maja poole.");
                         state = false;
                     }
 
