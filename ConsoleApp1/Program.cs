@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Start:
+        Start:
             //Menu
             Console.WriteLine("---Menu---\n(1) Play\n(2) About\n(3) Credits\n(4) Exit");
             int ValikMenu = int.Parse(Console.ReadLine());
@@ -23,7 +23,7 @@ namespace ConsoleApp1
 
                 Console.Clear();
                 Typewrite("Edaspidised valikud muudavad sinu mängukäiku!\n\nSinu tegelaseks on üheksanda klassi õpilane Artjom, kes hiljuti kolis Ida-Virumaale, Kohtla-Järvele. \nSul oli eelmises linnas trenn, mis sulle väga meeldis, kuid uues linnas sellist trenni ei ole,\nning nüüd pead sa otsima uue treeninguala millega sa tegelema soovid hakata.");
-                Valik:
+            Valik:
                 Console.WriteLine("\n\nPeate valima oma uue treeninguala:\n(1) Poks (Easy)\n(2) Jalgpall (Medium)\n(3) Iluuisutamine (Hard)");
                 int trgAla = int.Parse(Console.ReadLine());
                 if (trgAla == 1) //Poks
@@ -69,7 +69,7 @@ namespace ConsoleApp1
 
                 //1 päev
                 Typewrite("Käes on 31.detsember.\n\nArtjom on õhtupoolikul poe ees, sest tema ema palus, et ta ostaks koju süüa ja juua. \nTeed takistab must BMW E39, autost astuvad välja Marek ja Siim ning küsivad: ");
-                Valik2:
+            Valik2:
                 Console.WriteLine("\nMarek ja Siim: No Artjom, mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah/Ei]");
                 String Vastus420 = Console.ReadLine();
                 Console.Clear();
@@ -88,7 +88,7 @@ namespace ConsoleApp1
                 }
 
                 Typewrite("\nPeol märkab Artjom, et seal on palju tundmatuid nägusid, kuid suuremad grupid ikkagi suhtlevad pigem üksteise vahel \nkui kellegi teisega. Artjom läheb elutuppa otsima endale juua, teel sinna märkab ta pikka, blondi noormeest,\nkes märkab ka Artjomi ning suundub tema poole ning ütleb:\n\nDimitri: Tervist, tundud uus olevat. Olen Dimitri.\nArtjom: Kolisin hiljuti alles Kohtla-Järvele seega olen üsna uus, olen Artjom muidu.\nDimitri: Aa, sina oledki see Artjom keda Marek mulle mõned päevad tagasi mainis?\nArtjom: Vist jah, ega sa muidu ei tea juhuslikult, kes seda pidu korraldab?\nDimitri: See ongi minu pidu, tahad midagi juua või oled kainekas?\nArtjom: Ma ei tea.. ma pole varem joonud.\nDimitri: Tohoh, seda annab küll muuta. Tule minu järgi kööki, tutvustan sulle paari inimest.\n\nArtjom ja Dimitri seavad sammud köögi suunas, köögis märkavad nad, et õllekasti kõrval seisavad kaks noormeest ja üks tüdruk.\nArtjom ja Dimitri lähevad nende juurde ning hakkavad vestlema:\nDimitri: Vaadake kutid kelle ma leidsin, see on Artjom. Kutt kolis alles hiljuti Kohtla-Järvele seega võtke rahulikult.\nDimitri: Aga sellepeale me ju võtame?\nPeeter: Muidugi võtame.\nTanja: Kutid võtke nüüd rahulikult\nKutid: võtame võtame..");
-                Valik3:
+            Valik3:
                 Console.WriteLine("\nTanja: Artjom kas sa tobi tahad?\n[Tahan/Ei taha]");
                 String Vastus1337 = Console.ReadLine();
 
@@ -116,16 +116,18 @@ namespace ConsoleApp1
                 Console.WriteLine("\n\nVajutage enterit, et looga edasi minna.");
                 Console.ReadLine();
                 Console.Clear();
+                //3 päev
                 Artjom.FreeDay();
 
+                //4 päev
                 Typewrite("\nArtjom ja Dimitri jalutavad peo poole, mis juba teist nädalat järjest toimub Dimitri pool.\nNad saavad oma pundiga kokku, teretavad üksteist ja on jällegi teel peo poole.\nKohale jõudes teeb Artjom ühe tobi.\nTanja: Sa viimasel ajal suht palju kimund, veits paljuks ei lähe?\nArtjom: Vaevalt.\nDimitri: Õige mees.\nPeeter: Ega las ta teeb kui soovib. Mees teeb mis tahab.\nTanja: Selge, eks ma ise peaks vähem peale tegema ja enda alkohooliga tagasi hoidma.\nVladimir: Sa peaks juba võõrutusravi saama.\nTanja: Jää vait...\n ");
                 Typewrite("\nVajutage enterit, et looga edasi minna.");
                 Console.ReadKey();
                 Console.Clear();
-                Valik4:
+            Valik4:
                 Typewrite("Tanja ja Vladimir jäävad kaklema üksteise vahel, neid lahutab Vitja,Tanja poisssõber.\nSamal ajal Peeter läheb toob joogid, Dimitri ja Artjom lähevad tuppa.\nDimitri võtab taskust tableti ja küsib:\nDimitri: Tahad? Teeb su tuju paremaks.\nArtjom: Ei soovi väga, mul praegugi hea olla.\nDimitri: Aga mis siis kui joogiga pakun?\n[Tahan/Ei taha]\n");
                 String Vastus69 = Console.ReadLine();
-                
+
                 if (Vastus69 == "tahan" | Vastus69 == "Tahan")
                 {
                     Console.Clear();
@@ -146,17 +148,17 @@ namespace ConsoleApp1
                     Console.WriteLine("\nSellist valikut ei ole, proovi uuesti.");
                     goto Valik4;
                 }
-                Valik5:
+            Valik5:
                 Typewrite("\nArtjom: Nahui sa mulle sisse lendad?\nVitja: Türa sa seleted?\nVitja: Vaatan, et oled suht äratõusnud juba, sulle tuleks küll viisakalt molli kütta.\nArtjom: Aga äkki tegutsed ka siis või oled niisama jutumees?\nVitja: Aga näita parem ise? Põrkad pidevalt aga võiksid ise ka tegudeni jõuda.");
                 Typewrite("\n\n[Löön/Ei löö]\n");
                 string action = Console.ReadLine();
 
-                if (action == "Löön"|action == "löön")
+                if (action == "Löön" | action == "löön")
                 {
                     Console.Clear();
                     Console.WriteLine("Te valisite: Löön");
                     Typewrite("\nArtjom lööb Vitjat korduvalt näkku ning Vitja kukub põrandale pikali.");
-                    Valik6:
+                Valik6:
                     Typewrite("\nTuppa tuleb peeter, kes korraks jälgib toimunut ja siis sähvatab:\nPeeter: Mida vittu sa korraldad Artjom? Putsi pean sind samamoodi kasti taguma?\nArtjom: Mille pärast?\nPeeter: Tra vaata mida sa Vitjaga tegid, ta on mu parim sõber.\n[Jooksen/löön]\n");
                     string action2 = Console.ReadLine();
 
@@ -180,32 +182,35 @@ namespace ConsoleApp1
                         Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
                         goto Valik6;
                     }
-                
+
                 }
-                else if (action == "Ei löö"| action == "ei löö")
+                else if (action == "Ei löö" | action == "ei löö")
                 {
                     Console.Clear();
                     Console.WriteLine("Te valisite: Ei löö");
                     Typewrite("\nPeeter tuleb karjumise peale tuppa ning hakkab Artjomi ning Vitjat lepitama.\n\n[Õnnestub/Ei õnnestu]");
                     string action3 = Console.ReadLine();
 
-                        if (action3 == "Õnnestub" |action3 == "õnnestub")
-                        {
+                    if (action3 == "Õnnestub" | action3 == "õnnestub")
+                    {
                         Typewrite("\nArtjom ning Vitja suruvad kätt ja Artjom seab sammud kodupoole");
-                        }
-                        else if (action3 == "Ei õnnestu" | action3 == "ei õnnestu")
-                        {
+                    }
+                    else if (action3 == "Ei õnnestu" | action3 == "ei õnnestu")
+                    {
                         Typewrite("\nPeeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb\n\nVajutage enterit, et looga edasi minna.");
                         Console.ReadLine();
-                        }
+                    }
+
+                    //5 päev (Freeday)
+                    Artjom.Freeday1();
 
                     //6 päev
                     Console.Clear();
-                    Valik6:
+                Valik6:
                     Typewrite("Kell on 5.42 ning Dimitri helistab\n\nDimitri: Artjom sa pead mind aitama, ma olen suures pasas!\nArtjom: Kuidas? Millega?\nDimitri: Pole tähtis aga, kas sa saad mind aidata?\n[Aitan/Ei aita]\n");
                     string action4 = Console.ReadLine();
 
-                    if(action4 == "Aitan"| action4 == "aitan")
+                    if (action4 == "Aitan" | action4 == "aitan")
                     {
                         Console.Clear();
                         Console.WriteLine("Te valisite: Aitan");
@@ -216,7 +221,7 @@ namespace ConsoleApp1
                         Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellegile? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad vana tehase poole");
 
                     }
-                    else if(action4 == "Ei aita" | action4 == "ei aita")
+                    else if (action4 == "Ei aita" | action4 == "ei aita")
                     {
                         // Tekst/Tegevus puudu. 
                     }
@@ -261,7 +266,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
                 goto Start;
             }
-            Console.WriteLine("\nProgramm lõpetas töö."); 
+            Console.WriteLine("\nProgramm lõpetas töö.");
         }
 
         static void Typewrite(string message)
