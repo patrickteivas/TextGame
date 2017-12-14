@@ -206,7 +206,6 @@ namespace ConsoleApp1
 
                     //6 päev
                     Console.Clear();
-                Valik6:
                     Typewrite("Kell on 5.42 ning Dimitri helistab\n\nDimitri: Artjom sa pead mind aitama, ma olen suures pasas!\nArtjom: Kuidas? Millega?\nDimitri: Pole tähtis aga, kas sa saad mind aidata?\nArtjom: Jah muidugi ma aitan!\n");
                     Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
                     Console.ReadKey();
@@ -217,7 +216,9 @@ namespace ConsoleApp1
                     Console.WriteLine("-15 min hiljem jõuab Artjom Vladimiri ukse ette-");
                     Typewrite("\nArtjom: Laseb uske kella\nArtjom: Mina Artjom, Dimitril on meie abi vaja.\nVladimir avab ukse ning kutsub teda sisse.\nArtjom: Ta jättis mulje, et ta on suures pasas!\nVladimir: Tule kaasa.\n");
                     Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellelegi? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad vana tehase poole");
-                    //7 päev
+                    Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
+                    Console.ReadKey();
+                    Console.Clear();
 
                 }
                 else
