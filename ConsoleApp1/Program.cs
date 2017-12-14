@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Media;
+using System.IO;
 
 namespace ConsoleApp1
 {
@@ -10,7 +12,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        Start:
+            Start:
+            //Music
+            SoundPlayer player = new SoundPlayer();
+            player.SoundLocation = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Music.wav");
+            Console.WriteLine(player.SoundLocation);
+            player.Play();
+            Console.Clear();
+
             //Menu
             Console.WriteLine("---Menu---\n(1) Play\n(2) About\n(3) Credits\n(4) Exit");
             int ValikMenu = int.Parse(Console.ReadLine());
