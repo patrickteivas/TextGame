@@ -129,25 +129,25 @@ namespace ConsoleApp1
                 Artjom.FreeDay();
 
                 //4 päev
-                Typewrite("\nArtjom ja Dimitri jalutavad peo poole, mis juba teist nädalat järjest toimub Dimitri pool.\nNad saavad oma pundiga kokku, teretavad üksteist ja on jällegi teel peo poole.\nKohale jõudes teeb Artjom ühe tobi.\nTanja: Sa viimasel ajal suht palju kimund, veits paljuks ei lähe?\nArtjom: Vaevalt.\nDimitri: Õige mees.\nPeeter: Ega las ta teeb kui soovib. Mees teeb mis tahab.\nTanja: Selge, eks ma ise peaks vähem peale tegema ja enda alkohooliga tagasi hoidma.\nVladimir: Sa peaks juba võõrutusravi saama.\nTanja: Jää vait...\n ");
+                Typewrite("Artjom ja Dimitri jalutavad peo poole, mis juba teist nädalat järjest toimub Dimitri pool.\nNad saavad oma pundiga kokku, teretavad üksteist ja on jällegi teel peo poole.\nKohale jõudes teeb Artjom ühe tobi.\n\nTanja: Sa viimasel ajal suht palju kimund, veits paljuks ei lähe?\nArtjom: Vaevalt.\nDimitri: Õige mees.\nPeeter: Ega las ta teeb kui soovib. Mees teeb mis tahab.\nTanja: Selge, eks ma ise peaks vähem peale tegema ja enda alkohooliga tagasi hoidma.\nVladimir: Sa peaks juba võõrutusravi saama.\nTanja: Jää vait...\n ");
                 Typewrite("\nVajutage enterit, et looga edasi minna.");
                 Console.ReadKey();
                 Console.Clear();
             Valik4:
-                Typewrite("Tanja ja Vladimir jäävad kaklema üksteise vahel, neid lahutab Vitja,Tanja poisssõber.\nSamal ajal Peeter läheb toob joogid, Dimitri ja Artjom lähevad tuppa.\nDimitri võtab taskust tableti ja küsib:\nDimitri: Tahad? Teeb su tuju paremaks.\nArtjom: Ei soovi väga, mul praegugi hea olla.\nDimitri: Aga mis siis kui joogiga pakun?\n[Tahan/Ei taha]\n");
+                Typewrite("Tanja ja Vladimir jäävad kaklema üksteise vahel, neid lahutab Vitja, Tanja poisssõber.\nSamal ajal Peeter läheb toob joogid, Dimitri ja Artjom lähevad tuppa.\n\nDimitri võtab taskust tableti ja küsib:\nDimitri: Tahad? Teeb su tuju paremaks.\nArtjom: Ei soovi väga, mul praegugi hea olla.\nDimitri: Aga mis siis kui joogiga pakun?\n[Tahan/Ei taha]\n");
                 String Vastus69 = Console.ReadLine();
 
                 if (Vastus69 == "tahan" | Vastus69 == "Tahan")
                 {
                     Console.Clear();
-                    Typewrite("Teie valik: Jah\n");
+                    Typewrite("Teie valik: Tahan\n");
                     Typewrite("\nDimitri: Vot seda ma arvasingi, sa oled ikka normaalne kutt.");
                     Typewrite("\nPeale tableti võtmist langeb Artjom põlvili ning hakkab tundma end imelikult,\nsilme eest läheb korraks mustaks ning tagasi tulles näeb Artjom rusikat enda poole lendamas.\nLäheb kakluseks.");
                 }
                 else if (Vastus69 == "ei taha" | Vastus69 == "Ei taha")
                 {
                     Console.Clear();
-                    Typewrite("\nTeie valik: Ei");
+                    Typewrite("\nTeie valik: Ei taha");
                     Typewrite("Einoh, vähemalt võta siis juua.");
                     Typewrite("\nPeale joogi joomist võtmist langeb Artjom põlvili ning hakkab tundma end imelikult,\nsilme eest läheb korraks mustaks ning tagasi tulles näeb Artjom rusikat enda poole lendamas.\nLäheb kakluseks.");
                 }
@@ -233,14 +233,16 @@ namespace ConsoleApp1
                 //6 päev
                 Console.Clear();
 
-                Typewrite("Kell on 5.42 ning Dimitri helistab\n\nDimitri: Artjom sa pead mind aitama, ma olen suures pasas!\nArtjom: Kuidas? Millega?\nDimitri: Pole tähtis aga, kas sa saad mind aidata?\nArtjom: Jah muidugi ma aitan!\n");
+                Typewrite("Kell on 5:42 ning Dimitri helistab\n\nDimitri: Artjom sa pead mind aitama, ma olen suures pasas!\nArtjom: Kuidas? Millega?\nDimitri: Pole tähtis aga, kas sa saad mind aidata?\nArtjom: Jah muidugi ma aitan!\n");
                 Typewrite("\nArtjom: Kus sa oled?!\nDimitri: Vanas tehases ja kutsu Vladimir ka.\nArtjom: Okei, ma kohe tulen.");
-                Console.WriteLine("-15 min hiljem jõuab Artjom Vladimiri ukse ette-");
+                Console.WriteLine("\n\n-15 min hiljem jõuab Artjom Vladimiri ukse ette-");
                 Typewrite("\nArtjom: Laseb uske kella\nArtjom: Mina Artjom, Dimitril on meie abi vaja.\nVladimir avab ukse ning kutsub teda sisse.\nArtjom: Ta jättis mulje, et ta on suures pasas!\nVladimir: Tule kaasa.\n");
                 Typewrite("Artjom ja Vladimir lähevad alla keldrisse. Vladimir avab suure metallist kapi.\nArtjom: See on väga suur kogus relvi! \nVladimir võtab relva ja sihib Artjomi\nArtjom: Segane oled?\nVladimir: Kas sa lubad, et ei räägi kellelegi? \nArtjom: Muidugi luban! \nVladimir: Väga hea, vali siit midagi mis sulle meeldib.\nArtjom: Miks?! \nVladimir: Kuna me lähme kohe Dimitrit päästma.\nArtjom: Mida ?!\nVladimir: Sa kuulsid küll, vali nüüd!\nArtjom valib relva\nVladimir: Väga hea, polnud nii raske!\n\nNad lahkuvad keldrist ning suunduvad vana tehase poole");
-                //7 päev
+                Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
+                Console.ReadKey();
+                Console.Clear();
+                Typewrite("Tehase ees nad näevad...");
 
-                
             }
             else if (ValikMenu == 2)
             {
