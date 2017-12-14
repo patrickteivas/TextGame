@@ -22,7 +22,7 @@ namespace ConsoleApp1
             while (state == true)
             {
                 Typewrite("Artjom ärkab, kell on 7:45. Peate otsustama, mida Artjom edasi teeb.");
-                valik:
+            valik:
                 Console.WriteLine("\n(1) Läheb kooli\n(2) Ei lähe kooli");
                 int otsus = int.Parse(Console.ReadLine());
 
@@ -59,7 +59,7 @@ namespace ConsoleApp1
                         if (Respect > 100) Respect = 100;
                     }
                     Typewrite("Artjom otsustas, et ei lähe kooli ning nüüd on \ntal võimalus tegeleda millegi muuga.\n");
-                    valik2:
+                valik2:
                     Console.WriteLine("\nMillega ta võiks tegeleda?\n(1) Otsib varustaja ja müüb narkotsi.\n(2) Teeb peale.\n(3) Magab päeva maha.");
                     int otsus2 = int.Parse(Console.ReadLine());
                     if (otsus2 == 1)
@@ -191,9 +191,130 @@ namespace ConsoleApp1
             }
         }
 
-        public void DimitriBattle()
+        public void Freeday1()
         {
+            Typewrite("Artjom ärkab, kell on 7:45. Peate otsustama, mida Artjom edasi teeb.");
+        valik:
+            Console.WriteLine("\n(1) Läheb kooli\n(2) Ei lähe kooli");
+            int otsus = int.Parse(Console.ReadLine());
 
+            if (otsus == 1)
+            {
+                Console.Clear();
+                if (Agility < 100)
+                {
+                    Agility += 10;
+                    if (Agility > 100) Agility = 100;
+                }
+                Typewrite("Artjom tõusis voodist üles, pesi hambaid ja läks kooli.\nArtjom õppis hoolsalt koolis ning kell sai 17:00. Artjom läks koju.\nKodus Artjom sõi ning läks magama.");
+
+                Console.WriteLine("\n\nVajutage enterit, et looga edasi minna.");
+                Console.ReadLine();
+                Console.Clear();
+            }
+            else if (otsus == 2)
+            {
+                Console.Clear();
+                if (Respect < 100)
+                {
+                    Respect += 5;
+                    if (Respect > 100) Respect = 100;
+                }
+                Typewrite("Artjom otsustas, et ei lähe kooli ning nüüd on \ntal võimalus tegeleda millegi muuga.\n");
+            valik2:
+                Console.WriteLine("\nMillega ta võiks tegeleda?\n(1) Otsib varustaja ja müüb narkotsi.\n(2) Teeb peale.\n(3) Magab päeva maha.");
+                int otsus2 = int.Parse(Console.ReadLine());
+                if (otsus2 == 1)
+                {
+                    Console.Clear();
+                    if (Respect < 50)
+                    {
+                        Console.WriteLine("Kahjuks te ei saa sellega tegeleda (Liiga madal Respect).");
+                        goto valik2;
+                    }
+                    else
+                    {
+                        Random rnd = new Random();
+                        int chance = rnd.Next(0, 2);
+                        if (chance == 1)
+                        {
+                            Typewrite("Te leidsite diileri ja saite narko müüdud, kuid sellega läks terve päev.\nNüüd Artjom suundub koju ja jääb magama.");
+                            if (Respect < 100)
+                            {
+                                Respect += 15;
+                                if (Respect > 100) Respect = 100;
+                            }
+                            Money += 35;
+                            Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
+                            Console.ReadKey();
+                            Console.Clear();
+                        }
+                        else
+                        {
+                            Typewrite("Teil ei vedanud ja te ei leidnud diilerit, kuid otsiste terve päev.\nNüüd Artjom on kõndimisest väsinud ja liigub koju, kus jääb magama.");
+                            Respect -= 5;
+                            Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
+                            Console.ReadKey();
+                            Console.Clear();
+                        }
+                    }
+                }
+                else if (otsus2 == 2)
+                {
+                    Random rnd = new Random();
+                    int chance = rnd.Next(0, 2);
+                    if (chance == 1)
+                    {
+                        Console.Clear();
+                        Typewrite("Artjomil vedas: kui ta vaatas kapi alla, leidis ta sealt peidetud ZIP-locki, tegi peale ning hakkas XBOXi pelama. Õhtul läks Artjom magama.");
+                        if (Respect < 100)
+                        {
+                            Respect += 5;
+                            if (Respect > 100) Respect = 100;
+                        }
+                        Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
+                        Console.ReadKey();
+                        Console.Clear();
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Typewrite("Artjomil ei vedanud ning ta ei leidnud kodus peale.\nSelle peale otsustas ta terve päeva maha magada.");
+                        if (Stamina < 100)
+                        {
+                            Stamina += 10;
+                            if (Stamina > 100) Stamina = 100;
+                        }
+                        Console.WriteLine("\nVajutage enterit, et looga edasi minna.");
+                        Console.ReadKey();
+                        Console.Clear();
+                    }
+                }
+                else if (otsus2 == 3)
+                {
+                    Console.Clear();
+                    Typewrite("Artjom oli liiga väsinud, et midagi teha, ning magas päeva maha.\nVajutage enterit, et looga edasi minna.");
+                    if (Stamina < 100)
+                    {
+                        Stamina += 10;
+                        if (Stamina > 100) Stamina = 100;
+                    }
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.Write("Niisugust valikut pole, proovige uuesti\n");
+                    goto valik2;
+                }
+            }
+            else
+            {
+                Console.Clear();
+                Console.Write("Niisugust valikut pole, proovige uuesti");
+                goto valik;
+            }
         }
 
         static void Typewrite(string message)
