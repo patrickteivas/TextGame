@@ -381,7 +381,7 @@ namespace ConsoleApp1
             }
         }
 
-        static void Typewrite(string message)
+        public static void Typewrite(string message)
         {
             int a = 50;
             for (int i = 0; i < message.Length; i++)
