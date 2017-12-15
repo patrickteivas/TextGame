@@ -90,13 +90,13 @@ namespace ConsoleApp1
                     {
                         Valik2 = false;
                         Console.WriteLine("\nMarek ja Siim: No Artjom, mida sa ära otsustasid? Kas tuled siis või ei?\n[Jah/Ei]");
-                        String Vastus420 = Console.ReadLine();
+                        string Vastus420 = Console.ReadLine().ToLower();
                         Console.Clear();
-                        if (Vastus420 == "jah" | Vastus420 == "Jah" | Vastus420 == "Tulen" | Vastus420 == "tulen")
+                        if (Vastus420 == "jah" || Vastus420 == "tulen")
                         {
                             Typewrite("Marek kutsub Artjomi autosse, Artjom istub ning nad sõidavad peo poole, jutustades elust enesest.");
                         }
-                        else if (Vastus420 == "Ei" | Vastus420 == "ei" | Vastus420 == "ei tule" | Vastus420 == "Ei tule")
+                        else if (Vastus420 == "ei" || Vastus420 == "ei tule")
                         {
                             Typewrite("Siim läheb närvi mille peale Artjom siiski istub autosse");
                         }
@@ -111,16 +111,17 @@ namespace ConsoleApp1
                     bool Valik3 = true;
                     while (Valik3 == true)
                     {
+                        Valik3 = false;
                         Console.WriteLine("\nTanja: Artjom kas sa tobi tahad?\n[Tahan/Ei taha]");
-                        String Vastus1337 = Console.ReadLine();
+                        string Vastus1337 = Console.ReadLine().ToLower();
 
-                        if (Vastus1337 == "Tahan" | Vastus1337 == "tahan")
+                        if (Vastus1337 == "tahan")
                         {
                             Console.Clear();
                             Console.WriteLine("Te valiste: Tahan");
                             Typewrite("\nArtjom paneb suitsu põlema ning hakkab seda rahulikult tõmbama.");
                         }
-                        else if (Vastus1337 == "ei taha" | Vastus1337 == "Ei taha")
+                        else if (Vastus1337 == "ei taha")
                         {
                             Console.Clear();
                             Console.WriteLine("Te valisite: Ei taha");
@@ -152,16 +153,16 @@ namespace ConsoleApp1
                     {
                         Valik4 = false;
                         Typewrite("Tanja ja Vladimir jäävad vaidlema üksteise vahel, neid lahutab Vitja, Tanja poisssõber.\nSamal ajal Peeter läheb toob joogid, Dimitri ja Artjom lähevad tuppa.\n\nDimitri võtab taskust tableti ja küsib:\nDimitri: Tahad? Teeb su tuju paremaks.\nArtjom: Ei soovi väga, mul praegugi hea olla.\nDimitri: Kindel, et ei taha?\n[Tahan/Ei taha]\n");
-                        String Vastus69 = Console.ReadLine();
+                        string Vastus69 = Console.ReadLine().ToLower();
 
-                        if (Vastus69 == "tahan" | Vastus69 == "Tahan")
+                        if (Vastus69 == "tahan")
                         {
                             Console.Clear();
                             Console.WriteLine("Teie valik: Tahan\n");
                             Typewrite("\nDimitri: Vot seda ma arvasingi, sa oled ikka normaalne kutt.");
                             Typewrite("\nPeale tableti võtmist langeb Artjom põlvili ning hakkab tundma end imelikult,\nsilme eest läheb hetkeks mustaks ning tagasi tulles tunneb Artjom tugevat valu arvates, et Vitja lõi tal pildi tasku.\nLäheb kakluseks.");
                         }
-                        else if (Vastus69 == "ei taha" | Vastus69 == "Ei taha")
+                        else if (Vastus69 == "ei taha")
                         {
                             Console.Clear();
                             Console.WriteLine("\nTeie valik: Ei taha");
@@ -182,9 +183,9 @@ namespace ConsoleApp1
                     {
                         Valik5 = false;
                         Typewrite("\n\n[Löön/Ei löö]\n");
-                        string action = Console.ReadLine();
+                        string action = Console.ReadLine().ToLower();
 
-                        if (action == "Löön" | action == "löön")
+                        if (action == "löön")
                         {
                             Console.Clear();
                             Console.WriteLine("Te valisite: Löön");
@@ -194,16 +195,16 @@ namespace ConsoleApp1
                             {
                                 Valik7 = false;
                                 Typewrite("\nTuppa tuleb peeter, kes korraks jälgib toimunut ja siis sähvatab:\nPeeter: Mida vittu sa korraldad Artjom? Putsi pean sind samamoodi kasti taguma?\nArtjom: Mille pärast?\nPeeter: Tra vaata mida sa Vitjaga tegid, ta on mu parim sõber.\n[Jooksen/Löön]\n");
-                                string action2 = Console.ReadLine();
+                                string action2 = Console.ReadLine().ToLower();
 
-                                if (action2 == "Jooksen" | action2 == "jooksen")
+                                if (action2 == "jooksen")
                                 {
                                     Console.Clear();
                                     Console.WriteLine("Te valisite: Jooksen");
                                     Typewrite("\nArtjom jookseb ära, vältides Peetriga kaklust.");
                                     Typewrite("\nArtjom leidis, et ta on väsinud ning seadis sammud kodu poole.");
                                 }
-                                else if (action2 == "Löön" | action2 == "löön")
+                                else if (action2 == "löön")
                                 {
                                     Console.Clear();
                                     Console.WriteLine("Te valisite: Löön");
@@ -218,7 +219,7 @@ namespace ConsoleApp1
                                 }
                             }
                         }
-                        else if (action == "Ei löö" | action == "ei löö")
+                        else if (action == "ei löö")
                         {
                             Console.Clear();
                             Console.WriteLine("Te valisite: Ei löö");
@@ -227,13 +228,13 @@ namespace ConsoleApp1
                             {
                                 Valik7 = false;
                                 Typewrite("\nPeeter tuleb karjumise peale tuppa ning hakkab Artjomi ning Vitjat lepitama.\n\n[Õnnestub/Ei õnnestu]\n");
-                                string action3 = Console.ReadLine();
+                                string action3 = Console.ReadLine().ToLower();
 
-                                if (action3 == "Õnnestub" | action3 == "õnnestub")
+                                if (action3 == "õnnestub")
                                 {
                                     Typewrite("Artjom ning Vitja suruvad kätt ja Artjom seab sammud kodupoole");
                                 }
-                                else if (action3 == "Ei õnnestu" | action3 == "ei õnnestu")
+                                else if (action3 == "ei õnnestu")
                                 {
                                     Typewrite("Peeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb\n\nVajutage enterit, et looga edasi minna.");
                                     Console.ReadLine();
