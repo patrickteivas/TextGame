@@ -12,17 +12,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+            //Music
+            SoundPlayer player = new SoundPlayer();
+            player.SoundLocation = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Music.wav");
+            Console.WriteLine(player.SoundLocation);
+            player.PlayLooping();
+            Console.Clear();
             bool Start = true;
             while (Start == true)
             {
                 Start = false;
-                //Music
-                SoundPlayer player = new SoundPlayer();
-                player.SoundLocation = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\Music.wav");
-                Console.WriteLine(player.SoundLocation);
-                player.PlayLooping();
-                Console.Clear();
-
                 //Menu
                 Console.WriteLine("---Menu---\n(1) Play\n(2) About\n(3) Credits\n(4) Exit");
                 int ValikMenu = int.Parse(Console.ReadLine());
