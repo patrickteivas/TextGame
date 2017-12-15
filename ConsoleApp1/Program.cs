@@ -51,42 +51,54 @@ namespace ConsoleApp1
                         {
                             Valik = false;
                             Console.WriteLine("\n\nPeate valima oma uue treeninguala:\n(1) Poks \n(2) Jalgpall \n(3) Iluuisutamine ");
-                            int trgAla = int.Parse(Console.ReadLine());
-                            if (trgAla == 1) //Poks
-                            {
-                                Artjom.Agility = 75;
-                                Artjom.Stamina = 80;
-                                Artjom.Respect = 80;
-                                Console.Clear();
-                                Console.WriteLine("Te valisite: Poksi");
+                            string trgAla2 = Console.ReadLine();
+                            int trgAla;
+                            bool Kontroll2 = int.TryParse(trgAla2, out trgAla);
 
-                                Typewrite("\nArtjom on sõbrunenud oma uue klassiga väga hästi, kuid tal ei olnud tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid klassipeole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu.\nMarek ja Siim: Vahet pole mees, kas sa tuled siis või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole.\n");
-                            }
-                            else if (trgAla == 2) //Jalgpall
+                            if (Kontroll2 == false)
                             {
-                                Artjom.Agility = 50;
-                                Artjom.Stamina = 80;
-                                Artjom.Respect = 60;
                                 Console.Clear();
-                                Console.WriteLine("Te valisite: Jalgpalli");
-
-                                Typewrite("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei ole ta sõbrunenud uue klassiga terviklikult ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi plaanis. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid Siimu poole peole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu\nMarek ja Siim: Vahet pole mees, kas sa tuled siis või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole.\n");
-                            }
-                            else if (trgAla == 3) //Iluuisutamine
-                            {
-                                Artjom.Agility = 60;
-                                Artjom.Stamina = 30;
-                                Artjom.Respect = -40;
-                                Console.Clear();
-                                Console.WriteLine("Te valisite: Iluuisutamise");
-
-                                Typewrite("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel,\ntundis Artjom, et tema uus klass väldib teda ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid Siimu poole peole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu\nMarek ja Siim: Vahet pole mees, kas sa tuled siis või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole.\n");
+                                Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
+                                Valik = true;
                             }
                             else
                             {
-                                Console.Clear();
-                                Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
-                                Valik = true;
+                                if (trgAla == 1) //Poks
+                                {
+                                    Artjom.Agility = 75;
+                                    Artjom.Stamina = 80;
+                                    Artjom.Respect = 80;
+                                    Console.Clear();
+                                    Console.WriteLine("Te valisite: Poksi");
+
+                                    Typewrite("\nArtjom on sõbrunenud oma uue klassiga väga hästi, kuid tal ei olnud tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid klassipeole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu.\nMarek ja Siim: Vahet pole mees, kas sa tuled siis või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole.\n");
+                                }
+                                else if (trgAla == 2) //Jalgpall
+                                {
+                                    Artjom.Agility = 50;
+                                    Artjom.Stamina = 80;
+                                    Artjom.Respect = 60;
+                                    Console.Clear();
+                                    Console.WriteLine("Te valisite: Jalgpalli");
+
+                                    Typewrite("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel, \nei ole ta sõbrunenud uue klassiga terviklikult ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi plaanis. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid Siimu poole peole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu\nMarek ja Siim: Vahet pole mees, kas sa tuled siis või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole.\n");
+                                }
+                                else if (trgAla == 3) //Iluuisutamine
+                                {
+                                    Artjom.Agility = 60;
+                                    Artjom.Stamina = 30;
+                                    Artjom.Respect = -40;
+                                    Console.Clear();
+                                    Console.WriteLine("Te valisite: Iluuisutamise");
+
+                                    Typewrite("\nArtjom oli üsnagi sotsiaalne oma eelmises koolis, aga peale kuu aega olles Kohtla-Järvel,\ntundis Artjom, et tema uus klass väldib teda ning sellepärast ei olnud tal tulevasel \nvanaaasta õhtul mitte midagi teha. \n\nArtjom ärkab üles ja seab end valmis kooli minema 28. detsembri hommikul. \nKoolis teel õpetajate tuppa, kus Artjom soovis klassijuhatajaga rääkida kohtab Artjom kahte klassivenda.\nArtjomi klassivennad Marek ja Siim märkavad teda ning suunduvad kiiresti tema poole: \n\nMarek ja Siim: Kuule, Artjom.\nArtjom: Jah?\nMarek ja Siim: Plaanid Siimu poole peole tulla ka või? Polegi näinud sind varem pidudel.\nArtjom: Peole? Ma pole isegi kutset saanud.\nMarek ja Siim: Kas sa oled endaarust nii eriline, et väärid eraldi kutset? See on avatud pidu mees.\nArtjom: Aaa.. ma arvasin, et see on kinnine pidu\nMarek ja Siim: Vahet pole mees, kas sa tuled siis või ei?\nArtjom: Võib-olla, ma hetkel ei oska öelda, ma hiljem annan teada.\nMarek ja Siim vaatavad imestunud nägudega Artjomi poole, kui ta jalutab ära õpetajate toa poole.\n");
+                                }
+                                else
+                                {
+                                    Console.Clear();
+                                    Console.WriteLine("Sellist valikut ei ole, proovi uuesti.");
+                                    Valik = true;
+                                }
                             }
                         }
 
@@ -286,25 +298,36 @@ namespace ConsoleApp1
                         {
                             Valik6 = false;
                             Typewrite("Tehase ees näevad nad Dimitrit kahtlaste kuttidega.\nDimitri märkab Artjomi ning Vladimirit, ning hakkab hüsteeriliselt nende poole jooksma.\nVladimir märkab Dimitri žeste vihjates, et ta vajab relva ning ta vajab seda kiiresti.\nArtjom ning Vladimir katavad ennast auto taha, et tulevaste kuulide eest ennast kaitsta sama teeb ka Dimitri, kes peidab ennast seina taha.\n(1) Tulista auto tagant\n(2) Põgene\n(3) Ürita Dimitri poole joosta\n");
-                            int valik = int.Parse(Console.ReadLine());
+                            string valik228 = Console.ReadLine();
+                            int valik;
+                            bool Kontroll322 = int.TryParse(valik228, out valik);
 
-                            if (valik == 1)
+                            if (Kontroll == false)
                             {
-                                Typewrite("\nArtjom ning Vladimir tapavad tulevahetuses kaks inimest kolmest, kolmas mees põgenes. \nDimitrist saab kriminaalse grupeeringu juht ning Artjom hakkab tema jaoks töötama. \nGame Over.");
-                            }
-                            else if (valik == 2)
-                            {
-                                Typewrite("\nArtjom ning Vladimir üritavad põgeneda, kuid mõlemad hukkuvad tugeva verejooksu tagajärjel. \nGame Over.");
-                            }
-                            else if (valik == 3)
-                            {
-                                Typewrite("\nArtjom saab Dimitri poole joostes tugevalt vigastada, talle järgnes Vladimir kes hukkus jooksmise käigus.\nGame Over. ");
+                                Console.Clear();
+                                Console.WriteLine("Sellist valikut ei ole, proovi uuesti.\n");
+                                Valik6 = true;
                             }
                             else
                             {
-                                Console.Clear();
-                                Console.WriteLine("Sellist valikut ei ole");
-                                Valik6 = true;
+                                if (valik == 1)
+                                {
+                                    Typewrite("\nArtjom ning Vladimir tapavad tulevahetuses kaks inimest kolmest, kolmas mees põgenes. \nDimitrist saab kriminaalse grupeeringu juht ning Artjom hakkab tema jaoks töötama. \nGame Over.");
+                                }
+                                else if (valik == 2)
+                                {
+                                    Typewrite("\nArtjom ning Vladimir üritavad põgeneda, kuid mõlemad hukkuvad tugeva verejooksu tagajärjel. \nGame Over.");
+                                }
+                                else if (valik == 3)
+                                {
+                                    Typewrite("\nArtjom saab Dimitri poole joostes tugevalt vigastada, talle järgnes Vladimir kes hukkus jooksmise käigus.\nGame Over. ");
+                                }
+                                else
+                                {
+                                    Console.Clear();
+                                    Console.WriteLine("Sellist valikut ei ole");
+                                    Valik6 = true;
+                                }
                             }
                         }
                     }
