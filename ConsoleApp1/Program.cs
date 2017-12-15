@@ -202,11 +202,11 @@ namespace ConsoleApp1
                     Typewrite("\nPeeter tuleb karjumise peale tuppa ning hakkab Artjomi ning Vitjat lepitama.\n\n[Õnnestub/Ei õnnestu]\n");
                     string action3 = Console.ReadLine();
 
-                    if (action3 == "Onnestub" | action3 == "onnestub")
+                    if (action3 == "Õnnestub" | action3 == "õnnestub")
                     {
                       Typewrite("Artjom ning Vitja suruvad kätt ja Artjom seab sammud kodupoole");
                     }
-                    else if (action3 == "Ei onnestu" | action3 == "ei onnestu")
+                    else if (action3 == "Ei õnnestu" | action3 == "ei õnnestu")
                     {
                         Typewrite("Peeter palub Artjomil kodu poole sammud seada, mida ka Artjom teeb\n\nVajutage enterit, et looga edasi minna.");
                         Console.ReadLine();
@@ -242,7 +242,7 @@ namespace ConsoleApp1
                 Console.ReadKey();
                 Console.Clear();
                 valik6:
-                Typewrite("Tehase ees näevad nad Dimitrit kahtlaste kuttidega.\nDimitri märkab Artjomi ning Vladimirit, ning hakkab hüsteeriliselt nende poole jooksma.\nVladimir märkab Dimitri žeste vihjates, et ta vajab relva ning ta vajab seda kiiresti.\nArtjom ning Vladimir katavad ennast auto taha, et tulevaste kuulide eest ennast kaitsta sama teeb ka Dimitri, kes peidab ennast seina taha.\n(1) Tulista auto tagant/n(2) Põgene/n(3) Ürita Dimitri poole joosta");
+                Typewrite("Tehase ees näevad nad Dimitrit kahtlaste kuttidega.\nDimitri märkab Artjomi ning Vladimirit, ning hakkab hüsteeriliselt nende poole jooksma.\nVladimir märkab Dimitri žeste vihjates, et ta vajab relva ning ta vajab seda kiiresti.\nArtjom ning Vladimir katavad ennast auto taha, et tulevaste kuulide eest ennast kaitsta sama teeb ka Dimitri, kes peidab ennast seina taha.\n(1) Tulista auto tagant\n(2) Põgene\n(3) Ürita Dimitri poole joosta\n");
                 int valik = int.Parse(Console.ReadLine());
 
                 if (valik == 1)     
